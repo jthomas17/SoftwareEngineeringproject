@@ -63,11 +63,15 @@
     <None Include="GettingStarted.Xamarin" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-<<<<<<< HEAD
-    <AndroidResource Include="Resources\layout\CameraRoll.axml">
-=======
     <AndroidResource Include="Resources\layout\PicSelect.axml">
->>>>>>> origin/master
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+	   <ItemGroup>
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\CameraRoll.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
