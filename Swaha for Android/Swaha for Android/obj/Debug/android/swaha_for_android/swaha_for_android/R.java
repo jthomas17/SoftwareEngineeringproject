@@ -17,12 +17,22 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
+<<<<<<< HEAD
         public static final int imageView1=0x7f070001;
         public static final int myButton=0x7f070000;
     }
     public static final class layout {
         public static final int cameraroll=0x7f030000;
         public static final int main=0x7f030001;
+=======
+        public static final int GalleryButton=0x7f050001;
+        public static final int MyImageView=0x7f050002;
+        public static final int StartPicActivityButton=0x7f050000;
+    }
+    public static final class layout {
+        public static final int main=0x7f030000;
+        public static final int picselect=0x7f030001;
+>>>>>>> origin/master
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;

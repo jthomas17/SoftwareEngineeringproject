@@ -76,11 +76,22 @@ namespace Swaha_for_Android
 		public partial class Id
 		{
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f070001
 			public const int imageView1 = 2131165185;
 			
 			// aapt resource value: 0x7f070000
 			public const int myButton = 2131165184;
+=======
+			// aapt resource value: 0x7f050001
+			public const int GalleryButton = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int MyImageView = 2131034114;
+			
+			// aapt resource value: 0x7f050000
+			public const int StartPicActivityButton = 2131034112;
+>>>>>>> origin/master
 			
 			static Id()
 			{
@@ -100,6 +111,9 @@ namespace Swaha_for_Android
 			
 			// aapt resource value: 0x7f030001
 			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030001
+			public const int PicSelect = 2130903041;
 			
 			static Layout()
 			{

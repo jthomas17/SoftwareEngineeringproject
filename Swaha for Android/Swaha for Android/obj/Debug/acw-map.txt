@@ -2,3 +2,10 @@ Swaha_for_Android.MainActivity, Swaha for Android;md5f6a8d907d22e5f6f172573dcfc1
 Swaha_for_Android.MainActivity, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f6a8d907d22e5f6f172573dcfc190056.MainActivity
 Swaha_for_Android.MainActivity;md5f6a8d907d22e5f6f172573dcfc190056.MainActivity
 swaha_for_android.MainActivity;md5f6a8d907d22e5f6f172573dcfc190056.MainActivity
+<<<<<<< HEAD
+=======
+Swaha_for_Android.PicSelectAvtivity, Swaha for Android;md5f6a8d907d22e5f6f172573dcfc190056.PicSelectAvtivity
+Swaha_for_Android.PicSelectAvtivity, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f6a8d907d22e5f6f172573dcfc190056.PicSelectAvtivity
+Swaha_for_Android.PicSelectAvtivity;md5f6a8d907d22e5f6f172573dcfc190056.PicSelectAvtivity
+swaha_for_android.PicSelectAvtivity;md5f6a8d907d22e5f6f172573dcfc190056.PicSelectAvtivity
+>>>>>>> origin/master

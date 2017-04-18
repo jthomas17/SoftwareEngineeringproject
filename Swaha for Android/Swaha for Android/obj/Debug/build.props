@@ -12,8 +12,15 @@ AndroidSdkPath=
 AndroidNdkPath=
 JavaSdkPath=
 AndroidSequencePointsMode=None
+<<<<<<< HEAD
 XamarinAndroidVersion=7.2.0-7
 MonoSymbolArchive=False
 AndroidUseLatestPlatformSdk=True
 TargetFrameworkVersion=v7.1
+=======
+XamarinAndroidVersion=7.1.0-41
+MonoSymbolArchive=False
+AndroidUseLatestPlatformSdk=True
+TargetFrameworkVersion=v6.0
+>>>>>>> origin/master
 AndroidCreatePackagePerAbi=
