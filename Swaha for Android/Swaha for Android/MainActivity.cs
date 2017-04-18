@@ -95,6 +95,12 @@ namespace Swaha_for_Android
                 _imageView = FindViewById<ImageView>(Resource.Id.imageView1);
                 button.Click += TakeAPicture;
             }
+            Button gotoPicSelect = FindViewById<Button>(Resource.Id.GoToPictureSelect);
+            gotoPicSelect.Click += delegate
+            {
+                var PicSelectIntent = new Intent(this, typeof(PicSelectAvtivity));
+                StartActivity(PicSelectIntent);
+            };
         }
     }
 

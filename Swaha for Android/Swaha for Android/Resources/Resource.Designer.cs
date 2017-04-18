@@ -76,14 +76,17 @@ namespace Swaha_for_Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070002
-			public const int GalleryButton = 2131165186;
-			
 			// aapt resource value: 0x7f070003
-			public const int MyImageView = 2131165187;
+			public const int GalleryButton = 2131165187;
 			
 			// aapt resource value: 0x7f070001
-			public const int imageView1 = 2131165185;
+			public const int GoToPictureSelect = 2131165185;
+			
+			// aapt resource value: 0x7f070004
+			public const int MyImageView = 2131165188;
+			
+			// aapt resource value: 0x7f070002
+			public const int imageView1 = 2131165186;
 			
 			// aapt resource value: 0x7f070000
 			public const int myButton = 2131165184;
