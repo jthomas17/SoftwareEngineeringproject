@@ -1,12 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-<<<<<<< HEAD
 using Android.Content;
 using Android.Content.PM;
 using Android.Graphics;
@@ -18,19 +9,12 @@ using System.Collections.Generic;
 using Environment = Android.OS.Environment;
 using Uri = Android.Net.Uri;
 
-
-
 public static class App
 {
     public static File _file;
     public static File _dir;
     public static Bitmap bitmap;
 }
-=======
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
->>>>>>> origin/master
 
 namespace Swaha_for_Android
 {
@@ -98,7 +82,6 @@ namespace Swaha_for_Android
 
             // Set our view from the "main" layout resource
             SetContentView (Resource.Layout.Main);
-<<<<<<< HEAD
 
             if (IsThereAnAppToTakePictures())
             {
@@ -108,14 +91,6 @@ namespace Swaha_for_Android
                 _imageView = FindViewById<ImageView>(Resource.Id.imageView1);
                 button.Click += TakeAPicture;
             }
-=======
-            Button startPicActivityButton = FindViewById<Button>(Resource.Id.StartPicActivityButton);
-            startPicActivityButton.Click += (sender, e) =>
-            {
-                var intent = new Intent(this, typeof(PicSelectAvtivity));
-                StartActivity(intent);
-            };
->>>>>>> origin/master
         }
     }
 
