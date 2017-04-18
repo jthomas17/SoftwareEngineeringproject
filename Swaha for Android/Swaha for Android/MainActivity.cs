@@ -1,3 +1,6 @@
+﻿using Android.App;
+using Android.Widget;
+using Android.OS;
 using Android.Content;
 using Android.Content.PM;
 using Android.Graphics;
@@ -8,6 +11,7 @@ using Java.IO;
 using System.Collections.Generic;
 using Environment = Android.OS.Environment;
 using Uri = Android.Net.Uri;
+
 
 public static class App
 {
@@ -81,7 +85,7 @@ namespace Swaha_for_Android
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView (Resource.Layout.Main);
+            SetContentView(Resource.Layout.Main);
 
             if (IsThereAnAppToTakePictures())
             {

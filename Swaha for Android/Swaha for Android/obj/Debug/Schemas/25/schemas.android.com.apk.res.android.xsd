@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>4/18/2017 12:47:52 AM</xs:documentation>
+    <xs:documentation>4/18/2017 4:22:58 AM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -344,6 +344,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -436,6 +437,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -1013,6 +1015,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -1136,6 +1139,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -1706,6 +1710,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -1817,6 +1822,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -1909,6 +1915,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -2382,6 +2389,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -2683,6 +2691,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -3257,6 +3266,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -5532,6 +5542,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -5624,6 +5635,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -5950,6 +5962,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -6768,6 +6781,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -7081,6 +7095,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -7394,6 +7409,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -7747,6 +7763,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -8060,6 +8077,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -8183,6 +8201,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -8484,6 +8503,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -9129,6 +9149,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -10962,6 +10983,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -11439,6 +11461,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -11627,6 +11650,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -13776,6 +13800,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -15592,6 +15617,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -16223,6 +16249,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -16955,14 +16982,17 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkedTextView1" />
+            <xs:enumeration value="@id/GalleryButton" />
             <xs:enumeration value="@id/imageView1" />
             <xs:enumeration value="@id/myButton" />
+            <xs:enumeration value="@id/MyImageView" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
             <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
             <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
             <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionSetProgress" />
             <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
             <xs:enumeration value="@android:id/addToDictionary" />
             <xs:enumeration value="@android:id/background" />
@@ -16983,6 +17013,7 @@
             <xs:enumeration value="@android:id/hint" />
             <xs:enumeration value="@android:id/home" />
             <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon_frame" />
             <xs:enumeration value="@android:id/icon1" />
             <xs:enumeration value="@android:id/icon2" />
             <xs:enumeration value="@android:id/input" />
@@ -16990,6 +17021,7 @@
             <xs:enumeration value="@android:id/inputExtractEditText" />
             <xs:enumeration value="@android:id/keyboardView" />
             <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/list_container" />
             <xs:enumeration value="@android:id/mask" />
             <xs:enumeration value="@android:id/message" />
             <xs:enumeration value="@android:id/navigationBarBackground" />
@@ -17008,6 +17040,7 @@
             <xs:enumeration value="@android:id/statusBarBackground" />
             <xs:enumeration value="@android:id/stopSelectingText" />
             <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switch_widget" />
             <xs:enumeration value="@android:id/switchInputMethod" />
             <xs:enumeration value="@android:id/tabcontent" />
             <xs:enumeration value="@android:id/tabhost" />
@@ -18045,6 +18078,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -20876,6 +20910,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -23646,6 +23681,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -23738,6 +23774,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -23830,6 +23867,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -23922,6 +23960,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -24565,6 +24604,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -24878,6 +24918,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -25619,6 +25660,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -26088,6 +26130,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -26433,6 +26476,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -27098,6 +27142,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -29160,6 +29205,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -29735,6 +29781,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -30172,6 +30219,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -30727,6 +30775,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -31255,6 +31304,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -31834,6 +31884,8 @@
             <xs:enumeration value="@android:style/TextAppearance.Material.Widget.ActionMode.Title" />
             <xs:enumeration value="@android:style/TextAppearance.Material.Widget.ActionMode.Title.Inverse" />
             <xs:enumeration value="@android:style/TextAppearance.Material.Widget.Button" />
+            <xs:enumeration value="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored" />
+            <xs:enumeration value="@android:style/TextAppearance.Material.Widget.Button.Colored" />
             <xs:enumeration value="@android:style/TextAppearance.Material.Widget.Button.Inverse" />
             <xs:enumeration value="@android:style/TextAppearance.Material.Widget.DropDownHint" />
             <xs:enumeration value="@android:style/TextAppearance.Material.Widget.DropDownItem" />
@@ -31965,6 +32017,7 @@
             <xs:enumeration value="@android:style/Theme.Material.Light.Dialog.NoActionBar.MinWidth" />
             <xs:enumeration value="@android:style/Theme.Material.Light.Dialog.Presentation" />
             <xs:enumeration value="@android:style/Theme.Material.Light.DialogWhenLarge" />
+            <xs:enumeration value="@android:style/Theme.Material.Light.DialogWhenLarge.DarkActionBar" />
             <xs:enumeration value="@android:style/Theme.Material.Light.DialogWhenLarge.NoActionBar" />
             <xs:enumeration value="@android:style/Theme.Material.Light.LightStatusBar" />
             <xs:enumeration value="@android:style/Theme.Material.Light.NoActionBar" />
@@ -32295,6 +32348,7 @@
             <xs:enumeration value="@android:style/Widget.Material.CompoundButton.CheckBox" />
             <xs:enumeration value="@android:style/Widget.Material.CompoundButton.RadioButton" />
             <xs:enumeration value="@android:style/Widget.Material.CompoundButton.Star" />
+            <xs:enumeration value="@android:style/Widget.Material.CompoundButton.Switch" />
             <xs:enumeration value="@android:style/Widget.Material.DatePicker" />
             <xs:enumeration value="@android:style/Widget.Material.DropDownItem" />
             <xs:enumeration value="@android:style/Widget.Material.DropDownItem.Spinner" />
@@ -32329,6 +32383,7 @@
             <xs:enumeration value="@android:style/Widget.Material.Light.CompoundButton.CheckBox" />
             <xs:enumeration value="@android:style/Widget.Material.Light.CompoundButton.RadioButton" />
             <xs:enumeration value="@android:style/Widget.Material.Light.CompoundButton.Star" />
+            <xs:enumeration value="@android:style/Widget.Material.Light.CompoundButton.Switch" />
             <xs:enumeration value="@android:style/Widget.Material.Light.DatePicker" />
             <xs:enumeration value="@android:style/Widget.Material.Light.DropDownItem" />
             <xs:enumeration value="@android:style/Widget.Material.Light.DropDownItem.Spinner" />
@@ -32342,6 +32397,7 @@
             <xs:enumeration value="@android:style/Widget.Material.Light.ListView" />
             <xs:enumeration value="@android:style/Widget.Material.Light.ListView.DropDown" />
             <xs:enumeration value="@android:style/Widget.Material.Light.MediaRouteButton" />
+            <xs:enumeration value="@android:style/Widget.Material.Light.NumberPicker" />
             <xs:enumeration value="@android:style/Widget.Material.Light.PopupMenu" />
             <xs:enumeration value="@android:style/Widget.Material.Light.PopupMenu.Overflow" />
             <xs:enumeration value="@android:style/Widget.Material.Light.PopupWindow" />
@@ -32374,6 +32430,7 @@
             <xs:enumeration value="@android:style/Widget.Material.ListView" />
             <xs:enumeration value="@android:style/Widget.Material.ListView.DropDown" />
             <xs:enumeration value="@android:style/Widget.Material.MediaRouteButton" />
+            <xs:enumeration value="@android:style/Widget.Material.NumberPicker" />
             <xs:enumeration value="@android:style/Widget.Material.PopupMenu" />
             <xs:enumeration value="@android:style/Widget.Material.PopupMenu.Overflow" />
             <xs:enumeration value="@android:style/Widget.Material.PopupWindow" />
@@ -32388,6 +32445,7 @@
             <xs:enumeration value="@android:style/Widget.Material.ScrollView" />
             <xs:enumeration value="@android:style/Widget.Material.SearchView" />
             <xs:enumeration value="@android:style/Widget.Material.SeekBar" />
+            <xs:enumeration value="@android:style/Widget.Material.SeekBar.Discrete" />
             <xs:enumeration value="@android:style/Widget.Material.SegmentedButton" />
             <xs:enumeration value="@android:style/Widget.Material.Spinner" />
             <xs:enumeration value="@android:style/Widget.Material.Spinner.Underlined" />
@@ -32456,6 +32514,7 @@
             <xs:enumeration value="?android:attr/checkBoxPreferenceStyle" />
             <xs:enumeration value="?android:attr/checkboxStyle" />
             <xs:enumeration value="?android:attr/checkedTextViewStyle" />
+            <xs:enumeration value="?android:attr/contextPopupMenuStyle" />
             <xs:enumeration value="?android:attr/datePickerDialogTheme" />
             <xs:enumeration value="?android:attr/datePickerStyle" />
             <xs:enumeration value="?android:attr/dialogPreferenceStyle" />
@@ -32475,6 +32534,7 @@
             <xs:enumeration value="?android:attr/horizontalScrollViewStyle" />
             <xs:enumeration value="?android:attr/imageButtonStyle" />
             <xs:enumeration value="?android:attr/imageWellStyle" />
+            <xs:enumeration value="?android:attr/listMenuViewStyle" />
             <xs:enumeration value="?android:attr/listPopupWindowStyle" />
             <xs:enumeration value="?android:attr/listSeparatorTextViewStyle" />
             <xs:enumeration value="?android:attr/listViewStyle" />
@@ -32483,7 +32543,6 @@
             <xs:enumeration value="?android:attr/numberPickerStyle" />
             <xs:enumeration value="?android:attr/panelMenuListTheme" />
             <xs:enumeration value="?android:attr/panelTextAppearance" />
-            <xs:enumeration value="?android:attr/pointerStyle" />
             <xs:enumeration value="?android:attr/popupMenuStyle" />
             <xs:enumeration value="?android:attr/popupWindowStyle" />
             <xs:enumeration value="?android:attr/preferenceActivityStyle" />
@@ -32545,13 +32604,14 @@
             <xs:enumeration value="?android:attr/textAppearanceMedium" />
             <xs:enumeration value="?android:attr/textAppearanceMediumInverse" />
             <xs:enumeration value="?android:attr/textAppearanceMisspelledSuggestion" />
+            <xs:enumeration value="?android:attr/textAppearancePopupMenuHeader" />
             <xs:enumeration value="?android:attr/textAppearanceSearchResultSubtitle" />
             <xs:enumeration value="?android:attr/textAppearanceSearchResultTitle" />
             <xs:enumeration value="?android:attr/textAppearanceSmall" />
             <xs:enumeration value="?android:attr/textAppearanceSmallInverse" />
             <xs:enumeration value="?android:attr/textAppearanceSmallPopupMenu" />
+            <xs:enumeration value="?android:attr/textEditSuggestionHighlightStyle" />
             <xs:enumeration value="?android:attr/textSelectHandleWindowStyle" />
-            <xs:enumeration value="?android:attr/textSuggestionsWindowStyle" />
             <xs:enumeration value="?android:attr/textViewStyle" />
             <xs:enumeration value="?android:attr/timePickerDialogTheme" />
             <xs:enumeration value="?android:attr/timePickerStyle" />
@@ -33133,6 +33193,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -35088,6 +35149,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -35401,6 +35463,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -35714,6 +35777,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -36027,6 +36091,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -39075,6 +39140,8 @@
             <xs:enumeration value="@android:style/TextAppearance.Material.Widget.ActionMode.Title" />
             <xs:enumeration value="@android:style/TextAppearance.Material.Widget.ActionMode.Title.Inverse" />
             <xs:enumeration value="@android:style/TextAppearance.Material.Widget.Button" />
+            <xs:enumeration value="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored" />
+            <xs:enumeration value="@android:style/TextAppearance.Material.Widget.Button.Colored" />
             <xs:enumeration value="@android:style/TextAppearance.Material.Widget.Button.Inverse" />
             <xs:enumeration value="@android:style/TextAppearance.Material.Widget.DropDownHint" />
             <xs:enumeration value="@android:style/TextAppearance.Material.Widget.DropDownItem" />
@@ -39206,6 +39273,7 @@
             <xs:enumeration value="@android:style/Theme.Material.Light.Dialog.NoActionBar.MinWidth" />
             <xs:enumeration value="@android:style/Theme.Material.Light.Dialog.Presentation" />
             <xs:enumeration value="@android:style/Theme.Material.Light.DialogWhenLarge" />
+            <xs:enumeration value="@android:style/Theme.Material.Light.DialogWhenLarge.DarkActionBar" />
             <xs:enumeration value="@android:style/Theme.Material.Light.DialogWhenLarge.NoActionBar" />
             <xs:enumeration value="@android:style/Theme.Material.Light.LightStatusBar" />
             <xs:enumeration value="@android:style/Theme.Material.Light.NoActionBar" />
@@ -39536,6 +39604,7 @@
             <xs:enumeration value="@android:style/Widget.Material.CompoundButton.CheckBox" />
             <xs:enumeration value="@android:style/Widget.Material.CompoundButton.RadioButton" />
             <xs:enumeration value="@android:style/Widget.Material.CompoundButton.Star" />
+            <xs:enumeration value="@android:style/Widget.Material.CompoundButton.Switch" />
             <xs:enumeration value="@android:style/Widget.Material.DatePicker" />
             <xs:enumeration value="@android:style/Widget.Material.DropDownItem" />
             <xs:enumeration value="@android:style/Widget.Material.DropDownItem.Spinner" />
@@ -39570,6 +39639,7 @@
             <xs:enumeration value="@android:style/Widget.Material.Light.CompoundButton.CheckBox" />
             <xs:enumeration value="@android:style/Widget.Material.Light.CompoundButton.RadioButton" />
             <xs:enumeration value="@android:style/Widget.Material.Light.CompoundButton.Star" />
+            <xs:enumeration value="@android:style/Widget.Material.Light.CompoundButton.Switch" />
             <xs:enumeration value="@android:style/Widget.Material.Light.DatePicker" />
             <xs:enumeration value="@android:style/Widget.Material.Light.DropDownItem" />
             <xs:enumeration value="@android:style/Widget.Material.Light.DropDownItem.Spinner" />
@@ -39583,6 +39653,7 @@
             <xs:enumeration value="@android:style/Widget.Material.Light.ListView" />
             <xs:enumeration value="@android:style/Widget.Material.Light.ListView.DropDown" />
             <xs:enumeration value="@android:style/Widget.Material.Light.MediaRouteButton" />
+            <xs:enumeration value="@android:style/Widget.Material.Light.NumberPicker" />
             <xs:enumeration value="@android:style/Widget.Material.Light.PopupMenu" />
             <xs:enumeration value="@android:style/Widget.Material.Light.PopupMenu.Overflow" />
             <xs:enumeration value="@android:style/Widget.Material.Light.PopupWindow" />
@@ -39615,6 +39686,7 @@
             <xs:enumeration value="@android:style/Widget.Material.ListView" />
             <xs:enumeration value="@android:style/Widget.Material.ListView.DropDown" />
             <xs:enumeration value="@android:style/Widget.Material.MediaRouteButton" />
+            <xs:enumeration value="@android:style/Widget.Material.NumberPicker" />
             <xs:enumeration value="@android:style/Widget.Material.PopupMenu" />
             <xs:enumeration value="@android:style/Widget.Material.PopupMenu.Overflow" />
             <xs:enumeration value="@android:style/Widget.Material.PopupWindow" />
@@ -39629,6 +39701,7 @@
             <xs:enumeration value="@android:style/Widget.Material.ScrollView" />
             <xs:enumeration value="@android:style/Widget.Material.SearchView" />
             <xs:enumeration value="@android:style/Widget.Material.SeekBar" />
+            <xs:enumeration value="@android:style/Widget.Material.SeekBar.Discrete" />
             <xs:enumeration value="@android:style/Widget.Material.SegmentedButton" />
             <xs:enumeration value="@android:style/Widget.Material.Spinner" />
             <xs:enumeration value="@android:style/Widget.Material.Spinner.Underlined" />
@@ -39697,6 +39770,7 @@
             <xs:enumeration value="?android:attr/checkBoxPreferenceStyle" />
             <xs:enumeration value="?android:attr/checkboxStyle" />
             <xs:enumeration value="?android:attr/checkedTextViewStyle" />
+            <xs:enumeration value="?android:attr/contextPopupMenuStyle" />
             <xs:enumeration value="?android:attr/datePickerDialogTheme" />
             <xs:enumeration value="?android:attr/datePickerStyle" />
             <xs:enumeration value="?android:attr/dialogPreferenceStyle" />
@@ -39716,6 +39790,7 @@
             <xs:enumeration value="?android:attr/horizontalScrollViewStyle" />
             <xs:enumeration value="?android:attr/imageButtonStyle" />
             <xs:enumeration value="?android:attr/imageWellStyle" />
+            <xs:enumeration value="?android:attr/listMenuViewStyle" />
             <xs:enumeration value="?android:attr/listPopupWindowStyle" />
             <xs:enumeration value="?android:attr/listSeparatorTextViewStyle" />
             <xs:enumeration value="?android:attr/listViewStyle" />
@@ -39724,7 +39799,6 @@
             <xs:enumeration value="?android:attr/numberPickerStyle" />
             <xs:enumeration value="?android:attr/panelMenuListTheme" />
             <xs:enumeration value="?android:attr/panelTextAppearance" />
-            <xs:enumeration value="?android:attr/pointerStyle" />
             <xs:enumeration value="?android:attr/popupMenuStyle" />
             <xs:enumeration value="?android:attr/popupWindowStyle" />
             <xs:enumeration value="?android:attr/preferenceActivityStyle" />
@@ -39786,13 +39860,14 @@
             <xs:enumeration value="?android:attr/textAppearanceMedium" />
             <xs:enumeration value="?android:attr/textAppearanceMediumInverse" />
             <xs:enumeration value="?android:attr/textAppearanceMisspelledSuggestion" />
+            <xs:enumeration value="?android:attr/textAppearancePopupMenuHeader" />
             <xs:enumeration value="?android:attr/textAppearanceSearchResultSubtitle" />
             <xs:enumeration value="?android:attr/textAppearanceSearchResultTitle" />
             <xs:enumeration value="?android:attr/textAppearanceSmall" />
             <xs:enumeration value="?android:attr/textAppearanceSmallInverse" />
             <xs:enumeration value="?android:attr/textAppearanceSmallPopupMenu" />
+            <xs:enumeration value="?android:attr/textEditSuggestionHighlightStyle" />
             <xs:enumeration value="?android:attr/textSelectHandleWindowStyle" />
-            <xs:enumeration value="?android:attr/textSuggestionsWindowStyle" />
             <xs:enumeration value="?android:attr/textViewStyle" />
             <xs:enumeration value="?android:attr/timePickerDialogTheme" />
             <xs:enumeration value="?android:attr/timePickerStyle" />
@@ -40178,6 +40253,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -40516,6 +40592,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -40684,6 +40761,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -41264,6 +41342,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -41670,6 +41749,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -42096,6 +42176,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -42378,6 +42459,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -43557,6 +43639,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -43870,6 +43953,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -44513,6 +44597,7 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
+            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
