@@ -102,9 +102,7 @@ class MonoPackageManager_Resources {
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-<<<<<<< HEAD
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_25";
-=======
+
 	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_23";
->>>>>>> origin/master
+
 }
