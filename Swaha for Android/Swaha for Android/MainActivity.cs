@@ -12,6 +12,10 @@ using System.Collections.Generic;
 using Environment = Android.OS.Environment;
 using Uri = Android.Net.Uri;
 
+public void GoToActivity(Type myActivity)
+{
+            StartActivity(myActivity);
+}
 
 namespace Swaha_for_Android
 {
@@ -22,7 +26,9 @@ namespace Swaha_for_Android
         {
             base.OnCreate(bundle);
 
-            // Set our view from the "main" layout resource
+            StartActivity(typeof(CameraActivity));
+
+            // Set our view from the "main" layout resource  
             // SetContentView (Resource.Layout.Main);
         }
     }
