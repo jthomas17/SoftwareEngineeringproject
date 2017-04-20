@@ -13,13 +13,6 @@ using Environment = Android.OS.Environment;
 using Uri = Android.Net.Uri;
 
 
-public static class App
-{
-    public static File _file;
-    public static File _dir;
-    public static Bitmap bitmap;
-}
-
 namespace Swaha_for_Android
 {
     [Activity(Label = "Swaha_for_Android", MainLauncher = true, Icon = "@drawable/icon")]
