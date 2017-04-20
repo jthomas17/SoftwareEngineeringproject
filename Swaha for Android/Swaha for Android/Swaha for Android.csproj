@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BitmapHelpers.cs" />
+    <Compile Include="CameraActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="PicSelectAvtivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

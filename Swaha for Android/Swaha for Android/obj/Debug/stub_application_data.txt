@@ -1,2 +1,0 @@
-android.app.Application
-Swaha_for_Android.Swaha_for_Android
