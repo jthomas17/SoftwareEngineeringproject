@@ -21,7 +21,7 @@ namespace Swaha_for_Android
 
             // Create your application here
             SetContentView(Resource.Layout.PicSelect);
-
+            /*
             Button galleryButton = FindViewById<Button>(Resource.Id.GalleryButton);
             galleryButton.Click += delegate
             {
@@ -31,9 +31,12 @@ namespace Swaha_for_Android
                 imageIntent.SetAction(Intent.ActionGetContent);
                 StartActivityForResult(Intent.CreateChooser(imageIntent, "Select photo"), 0);
             };
+            */
+
         }
 
-            protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
+        
+        protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
 
@@ -43,6 +46,7 @@ namespace Swaha_for_Android
                 imageView.SetImageURI(data.Data);
             }
         }
+
 
     }
 }

@@ -12,11 +12,6 @@ using System.Collections.Generic;
 using Environment = Android.OS.Environment;
 using Uri = Android.Net.Uri;
 
-public void GoToActivity(Type myActivity)
-{
-            StartActivity(myActivity);
-}
-
 namespace Swaha_for_Android
 {
     [Activity(Label = "Swaha_for_Android", MainLauncher = true, Icon = "@drawable/icon")]
