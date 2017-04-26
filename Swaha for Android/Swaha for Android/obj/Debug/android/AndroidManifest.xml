@@ -4,8 +4,8 @@
   <uses-sdk android:minSdkVersion="16" />
   <uses-permission android:name="android.permission.CAMERA" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.INTERNET" />
   <application android:label="Swaha for Android" android:hardwareAccelerated="true" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:label="CameraActivity" android:name="md5f6a8d907d22e5f6f172573dcfc190056.CameraActivity" />
     <activity android:icon="@drawable/icon" android:label="Swaha_for_Android" android:name="md5f6a8d907d22e5f6f172573dcfc190056.MainActivity">
