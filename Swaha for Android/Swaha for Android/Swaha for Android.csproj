@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="BitmapHelpers.cs" />
     <Compile Include="CameraActivity.cs" />
+    <Compile Include="GridViewAdapter.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="PicSelectAvtivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -68,6 +69,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\CameraRoll.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PicSelectGridViewChildLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
