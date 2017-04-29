@@ -2,6 +2,10 @@ Swaha_for_Android.CameraActivity, Swaha for Android;md5f6a8d907d22e5f6f172573dcf
 Swaha_for_Android.CameraActivity, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f6a8d907d22e5f6f172573dcfc190056.CameraActivity
 Swaha_for_Android.CameraActivity;md5f6a8d907d22e5f6f172573dcfc190056.CameraActivity
 swaha_for_android.CameraActivity;md5f6a8d907d22e5f6f172573dcfc190056.CameraActivity
+Swaha_for_Android.GridViewAdapter, Swaha for Android;md5f6a8d907d22e5f6f172573dcfc190056.GridViewAdapter
+Swaha_for_Android.GridViewAdapter, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f6a8d907d22e5f6f172573dcfc190056.GridViewAdapter
+Swaha_for_Android.GridViewAdapter;md5f6a8d907d22e5f6f172573dcfc190056.GridViewAdapter
+swaha_for_android.GridViewAdapter;md5f6a8d907d22e5f6f172573dcfc190056.GridViewAdapter
 Swaha_for_Android.MainActivity, Swaha for Android;md5f6a8d907d22e5f6f172573dcfc190056.MainActivity
 Swaha_for_Android.MainActivity, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f6a8d907d22e5f6f172573dcfc190056.MainActivity
 Swaha_for_Android.MainActivity;md5f6a8d907d22e5f6f172573dcfc190056.MainActivity

@@ -17,39 +17,30 @@ namespace Swaha_for_Android
     [Activity(Label = "PicSelectAvtivity")]
     public class PicSelectAvtivity : Activity
     {
-      //  private GridView theGrid;
+        private GridView theGrid;
+        private GridViewAdapter gridAdapter;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here
+            // Set the layout
             SetContentView(Resource.Layout.PicSelect);
 
-            GridView theGrid = FindViewById<GridView>(Resource.Id.mygridview);
-            // Button galleryButton = FindViewById<Button>(Resource.Id.GalleryButton);
+            theGrid = FindViewById<GridView>(Resource.Id.mygridview);
+            gridAdapter = new GridViewAdapter(this);
+            theGrid.Adapter = gridAdapter;
 
-           
+            // Button galleryButton = FindViewById<Button>(Resource.Id.GalleryButton);
             var imageUri = MediaStore.Images.Media.ExternalContentUri;
-                
             string[] projection = {MediaStore.Images.Media.InterfaceConsts.Data};
 
             // might use this later to use .LoadInBackground()
             //var loader = new CursorLoader(this, imageUri, projection, null, null, null);
 
             // create cursor to retrieve pictures
-            using (ICursor cursor = ContentResolver.Query(MediaStore.Images.Media.ExternalContentUri, projection, null, null, null))
-            {
-                int columnIndex = cursor.GetColumnIndex(projection[0]);
-
-                if (cursor.MoveToFirst())
-                {
-                    var pictureUri = ContentUris.WithAppendedId(MediaStore.Images.Media.ExternalContentUri, cursor.GetLong(columnIndex));
-                    // gotta reformat the bitmap or else it doesn't show
-                    Bitmap bitmap = BitmapFactory.DecodeFile(cursor.GetString(columnIndex));
-                    //galleryImage.SetImageBitmap(bitmap);
-                }
-            };
+            
+              
 
         }
 
