@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+
 
 using Android.Database;
 using Android.Provider;
@@ -11,14 +11,15 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using System;
 
 namespace Swaha_for_Android
 {
     class GridViewAdapter : BaseAdapter
     {
         Activity _activity;
-        List<Bitmap> imageList;
+
+        // probably should not use a list of bitmaps TODO
+        List<UserImage> imageList;
 
         public GridViewAdapter(Activity activity)
         {
@@ -30,13 +31,15 @@ namespace Swaha_for_Android
         {
             // Button galleryButton = FindViewById<Button>(Resource.Id.GalleryButton);
             var imageUri = MediaStore.Images.Media.ExternalContentUri;
-
-            string[] projection = { MediaStore.Images.Media.InterfaceConsts.Data };
+            
+            string[] projection = { MediaStore.Images.Media.InterfaceConsts.Data,
+                                    MediaStore.Images.Media.InterfaceConsts.Id};
 
             var loader = new CursorLoader(_activity, MediaStore.Images.Media.ExternalContentUri, projection, null, null, null);
             var cursor = (ICursor)loader.LoadInBackground();
-            imageList = new List<Bitmap>();
-            int columnIndex = cursor.GetColumnIndex(projection[0]);
+            int[] columnIndex = { cursor.GetColumnIndex(projection[0]), cursor.GetColumnIndex(projection[1])};
+
+            imageList = new List<UserImage>();
             
             if (cursor.MoveToFirst())
             {
@@ -46,11 +49,11 @@ namespace Swaha_for_Android
                     {
                         break;
                     }
-                    var pictureUri = ContentUris.WithAppendedId(MediaStore.Images.Media.ExternalContentUri, cursor.GetLong(columnIndex));
-                    // gotta reformat the bitmap or else it doesn't show
-                    Bitmap bitmap = BitmapFactory.DecodeFile(cursor.GetString(columnIndex));
-                    //galleryImage.SetImageBitmap(bitmap);
-                    imageList.Add(bitmap);
+                    Android.Net.Uri pictureUri = ContentUris.WithAppendedId(MediaStore.Images.Media.ExternalContentUri, cursor.GetLong(columnIndex[0]));
+                    string pictureUriString = cursor.GetString(columnIndex[0]);
+                    int pictureID = cursor.GetInt(columnIndex[1]);
+                    
+                    imageList.Add(new UserImage(pictureUri, pictureID, pictureUriString));
                     
                 } while (cursor.MoveToNext());
             }
@@ -68,15 +71,23 @@ namespace Swaha_for_Android
 
         public override long GetItemId(int position)
         {
-            return imageList[position].GenerationId;
+            return imageList[position].GetId();
         }
 
+        /*
+        TODO: I think this currently is returning an entire gridview
+        for every instance of an image. Need to fix
+        */
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            var view = convertView ?? _activity.LayoutInflater.Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
-            var image = view.FindViewById<ImageView>(Resource.Id.gridImage);
+            //var view = convertView ?? _activity.LayoutInflater.Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
+            //var image = view.FindViewById<ImageView>(Resource.Id.gridImage);
 
-            image.SetImageBitmap(imageList[position]);
+            // NEED THIS LATER IN A DIFFERENT FUNCTION
+            //Bitmap bitmap = BitmapFactory.DecodeFile(imageList[position].GetUri().ToString());
+            Bitmap bitmap = BitmapFactory.DecodeFile(imageList[position].GetFileString());
+
+            image.SetImageBitmap(bitmap);
             return view;
         }
         
