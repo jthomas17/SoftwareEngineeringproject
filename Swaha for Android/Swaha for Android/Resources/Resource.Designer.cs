@@ -91,6 +91,15 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f070003
 			public const int mygridview = 2131165187;
 			
+			// aapt resource value: 0x7f070005
+			public const int start = 2131165189;
+			
+			// aapt resource value: 0x7f070006
+			public const int stop = 2131165190;
+			
+			// aapt resource value: 0x7f070007
+			public const int surface = 2131165191;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -115,6 +124,9 @@ namespace Swaha_for_Android
 			
 			// aapt resource value: 0x7f030003
 			public const int PicSelectGridViewChildLayout = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int Record = 2130903044;
 			
 			static Layout()
 			{
