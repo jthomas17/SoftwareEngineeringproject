@@ -26,13 +26,6 @@ public class GridViewAdapter
 			mono.android.TypeManager.Activate ("Swaha_for_Android.GridViewAdapter, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
-	public GridViewAdapter (android.app.Activity p0) throws java.lang.Throwable
-	{
-		super ();
-		if (getClass () == GridViewAdapter.class)
-			mono.android.TypeManager.Activate ("Swaha_for_Android.GridViewAdapter, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.App.Activity, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", this, new java.lang.Object[] { p0 });
-	}
-
 
 	public int getCount ()
 	{

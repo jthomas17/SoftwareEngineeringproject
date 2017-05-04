@@ -5,10 +5,8 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="5dp"
     android:padding="5dp">
-
-  <ImageView
-    android:id="@+id/gridImage"
-    android:layout_height="100dp"
-    android:layout_width="100dp"/>
-  
+    <ImageView
+        android:id="@+id/gridImage"
+        android:layout_height="100dp"
+        android:layout_width="100dp" />
 </LinearLayout>
