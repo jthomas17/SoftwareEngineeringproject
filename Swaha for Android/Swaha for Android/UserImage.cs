@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -17,26 +18,37 @@ namespace Swaha_for_Android
         private Android.Net.Uri imageDefinition;
         private int imageId;
         private string imagePathString;
-
-        public UserImage(Android.Net.Uri path, int id, string fileString)
+        private string thumbnailPathString;
+        private Android.Net.Uri thumbnailPathUri;
+        public UserImage(Android.Net.Uri path, int id, string fileString, Android.Net.Uri thumbUri, string tpath)
         {
             imageDefinition = path;
             imageId = id;
             imagePathString = fileString;
+            thumbnailPathString = tpath;
+            thumbnailPathUri = thumbUri;
         }
 
-        public int GetId()
+        public int id
         {
-            return imageId;
+            get { return imageId; }
         }
 
-        public Android.Net.Uri GetUri()
+        public Android.Net.Uri uri
         {
-            return imageDefinition;
+            get { return imageDefinition; }
         }
-        public string GetFileString()
+        public string filestring
         {
-            return imagePathString;
+            get { return imagePathString; }
+        }
+        public string thumbstring
+        {
+            get { return thumbnailPathString; }
+        }
+        public Android.Net.Uri thumburi
+        {
+            get { return thumbnailPathUri; }
         }
     }
 

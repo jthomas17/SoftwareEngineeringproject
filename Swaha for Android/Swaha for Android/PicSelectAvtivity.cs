@@ -19,6 +19,7 @@ namespace Swaha_for_Android
     {
         private GridView theGrid;
         private GridViewAdapter gridAdapter;
+        GridItemLoader gridLoader;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -26,24 +27,10 @@ namespace Swaha_for_Android
 
             // Set the layout
             SetContentView(Resource.Layout.PicSelect);
-
+            gridLoader = new GridItemLoader(this);
             theGrid = FindViewById<GridView>(Resource.Id.mygridview);
-            gridAdapter = new GridViewAdapter(this);
+            gridAdapter = new GridViewAdapter(this, gridLoader);
             theGrid.Adapter = gridAdapter;
-
-            // Button galleryButton = FindViewById<Button>(Resource.Id.GalleryButton);
-            var imageUri = MediaStore.Images.Media.ExternalContentUri;
-            string[] projection = {MediaStore.Images.Media.InterfaceConsts.Data};
-
-            // might use this later to use .LoadInBackground()
-            //var loader = new CursorLoader(this, imageUri, projection, null, null, null);
-
-            // create cursor to retrieve pictures
-            
-              
-
         }
-
-
     }
 }
