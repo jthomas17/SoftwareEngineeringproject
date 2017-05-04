@@ -1,8 +1,10 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using Android.Database;
+using Android.Provider;
+using Android.Graphics;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -15,34 +17,20 @@ namespace Swaha_for_Android
     [Activity(Label = "PicSelectAvtivity")]
     public class PicSelectAvtivity : Activity
     {
+        private GridView theGrid;
+        private GridViewAdapter gridAdapter;
+        GridItemLoader gridLoader;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here
+            // Set the layout
             SetContentView(Resource.Layout.PicSelect);
-
-            Button galleryButton = FindViewById<Button>(Resource.Id.GalleryButton);
-            galleryButton.Click += delegate
-            {
-                var imageIntent = new Intent(Intent.ActionPick);
-                imageIntent.SetType("image/*");
-                imageIntent.PutExtra(Intent.ExtraAllowMultiple, true);
-                imageIntent.SetAction(Intent.ActionGetContent);
-                StartActivityForResult(Intent.CreateChooser(imageIntent, "Select photo"), 0);
-            };
+            gridLoader = new GridItemLoader(this);
+            theGrid = FindViewById<GridView>(Resource.Id.mygridview);
+            gridAdapter = new GridViewAdapter(this, gridLoader);
+            theGrid.Adapter = gridAdapter;
         }
-
-            protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
-        {
-            base.OnActivityResult(requestCode, resultCode, data);
-
-            if (resultCode == Result.Ok)
-            {
-                var imageView = FindViewById<ImageView>(Resource.Id.MyImageView);
-                imageView.SetImageURI(data.Data);
-            }
-        }
-
     }
 }
