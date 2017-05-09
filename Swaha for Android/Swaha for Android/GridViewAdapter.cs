@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 
 using Android.Database;
 using Android.Provider;
@@ -18,60 +19,13 @@ namespace Swaha_for_Android
     class GridViewAdapter : BaseAdapter<UserImage>
     {
         Context _context;
-        Activity _activity;
         GridItemLoader _gridItemLoader;
-
-        /*
-        public GridViewAdapter(Activity activity, GridItemLoader gridItemLoader)
-        {
-            _activity = activity;
-            _gridItemLoader = gridItemLoader;
-        }
-        */
+        
         public GridViewAdapter(Context context, GridItemLoader gridItemLoader)
         {
             _context = context;
             _gridItemLoader = gridItemLoader;
         }
-
-        /*
-        void fillImages()
-        {
-            // Button galleryButton = FindViewById<Button>(Resource.Id.GalleryButton);
-            var imageUri = MediaStore.Images.Media.ExternalContentUri;
-            
-            string[] projection = { MediaStore.Images.Media.InterfaceConsts.Data,
-                                    MediaStore.Images.Media.InterfaceConsts.Id,
-                                    MediaStore.Images.Thumbnails.Data};
-
-            var loader = new CursorLoader(_activity, MediaStore.Images.Media.ExternalContentUri, projection, null, null, null);
-            var cursor = (ICursor)loader.LoadInBackground();
-            int[] columnIndex = { cursor.GetColumnIndex(projection[0]), cursor.GetColumnIndex(projection[1]), cursor.GetColumnIndex(projection[2])};
-
-            imageList = new List<UserImage>();
-            
-            if (cursor.MoveToFirst())
-            {
-                do
-                {
-                    if (cursor.IsLast)
-                    {
-                        break;
-                    }
-                    //Android.Net.Uri pictureUri = ContentUris.WithAppendedId(MediaStore.Images.Media.ExternalContentUri, cursor.GetLong(columnIndex[0]));
-
-                    string pictureUriString = cursor.GetString(columnIndex[0]);
-                    int pictureID = cursor.GetInt(columnIndex[1]);
-                    string thumbnailString = cursor.GetString(columnIndex[2]);
-                    Android.Net.Uri pictureUri = Android.Net.Uri.Parse(pictureUriString);
-                    Android.Net.Uri thumbUri = Android.Net.Uri.Parse(thumbnailString);
-
-                    imageList.Add(new UserImage(pictureUri, pictureID, pictureUriString, thumbUri, thumbnailString));
-                    
-                } while (cursor.MoveToNext());
-            }
-        }
-        */
 
         public override int Count
         {
@@ -90,24 +44,45 @@ namespace Swaha_for_Android
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            var view = convertView ?? LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
-            var image = view.FindViewById<ImageView>(Resource.Id.gridImage);
+            //var view = convertView ?? LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
+            //var image = view.FindViewById<ImageView>(Resource.Id.gridImage);
 
+            View itemView = convertView;
+            ViewHolder viewHolder;
+
+            if (itemView != null)
+            {
+                viewHolder = (ViewHolder)itemView.Tag;
+            }
+            else   /* If convertView is null */
+            {
+                viewHolder = new ViewHolder();
+                itemView = LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
+
+                ImageButton imgThumbnail = itemView.FindViewById<ImageButton>(Resource.Id.cellImage);
+                imgThumbnail.SetScaleType(ImageButton.ScaleType.CenterCrop);
+
+                viewHolder.Thumbnail = imgThumbnail;
+                itemView.Tag = viewHolder;
+
+            }
+            //BitmapFactory.Options options = new BitmapFactory.Options();
+            //options.InSampleSize = 8;    
+            //Bitmap bitmap = BitmapFactory.DecodeFile(_gridItemLoader.gridItems[position].filestring, options);
+            //_gridItemLoader.gridItems[position].SetScaledImage(false);
+
+            /* TODO: async function that scales the images from the filepath goes here 
+                if (holder.imageView != null){new ImageScalerTask(imagefilepath)}
+            */
+
+            viewHolder.Thumbnail.SetImageBitmap(_gridItemLoader.gridItems[position].bitmap);
             
-
-            //image.SetScaleType(ImageView.ScaleType.CenterCrop);
-
-            //image.SetImageURI(imageList[position].uri);
-
-            //BitmapFactory.Options options = await GetBitmapOptionsOfImageAsync(_gridItemLoader.gridItems[position].filestring);
-            BitmapFactory.Options options = new BitmapFactory.Options();
-            options.InSampleSize = 8;
-            Bitmap bitmap = BitmapFactory.DecodeFile(_gridItemLoader.gridItems[position].filestring, options);
-            //image.SetImageURI(_gridItemLoader.gridItems[position].thumburi);
-            image.SetImageBitmap(bitmap);
-            //bitmap.Recycle();
-            return view;
+            return itemView;
         }
         
+        public class ViewHolder : Java.Lang.Object
+        {
+            public ImageButton Thumbnail { get; set; }
+        }
     }
 }

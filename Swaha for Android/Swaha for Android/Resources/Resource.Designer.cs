@@ -80,7 +80,7 @@ namespace Swaha_for_Android
 			public const int GoToPictureSelect = 2131165185;
 			
 			// aapt resource value: 0x7f070004
-			public const int gridImage = 2131165188;
+			public const int cellImage = 2131165188;
 			
 			// aapt resource value: 0x7f070002
 			public const int imageView1 = 2131165186;

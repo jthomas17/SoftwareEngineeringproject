@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
-
+using Android.Graphics;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -18,15 +19,13 @@ namespace Swaha_for_Android
         private Android.Net.Uri imageDefinition;
         private int imageId;
         private string imagePathString;
-        private string thumbnailPathString;
-        private Android.Net.Uri thumbnailPathUri;
-        public UserImage(Android.Net.Uri path, int id, string fileString, Android.Net.Uri thumbUri, string tpath)
+        private Bitmap bip;
+        
+        public UserImage(Android.Net.Uri path, int id, string fileString)
         {
             imageDefinition = path;
             imageId = id;
             imagePathString = fileString;
-            thumbnailPathString = tpath;
-            thumbnailPathUri = thumbUri;
         }
 
         public int id
@@ -42,14 +41,25 @@ namespace Swaha_for_Android
         {
             get { return imagePathString; }
         }
-        public string thumbstring
+
+        public void SetScaledImage(bool positionFlag)
         {
-            get { return thumbnailPathString; }
+            if (positionFlag == true)
+            {
+                BitmapFactory.Options options = new BitmapFactory.Options();
+                options.InSampleSize = 8;
+                Bitmap bitmap = BitmapFactory.DecodeFile(imagePathString, options);
+                bip = bitmap;
+            }
+            else
+            {
+                bip = null;
+            }
+                
         }
-        public Android.Net.Uri thumburi
+        public Bitmap bitmap
         {
-            get { return thumbnailPathUri; }
+            get { return bip; }
         }
     }
-
 }

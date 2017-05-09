@@ -31,6 +31,10 @@ namespace Swaha_for_Android
             theGrid = FindViewById<GridView>(Resource.Id.mygridview);
             gridAdapter = new GridViewAdapter(this, gridLoader);
             theGrid.Adapter = gridAdapter;
+
+            
         }
+
+        
     }
 }
