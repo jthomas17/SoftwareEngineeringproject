@@ -24,11 +24,11 @@ public class ImageScalerTask
 			mono.android.TypeManager.Activate ("Swaha_for_Android.ImageScalerTask, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
-	public ImageScalerTask (android.widget.ImageButton p0) throws java.lang.Throwable
+	public ImageScalerTask (md5f6a8d907d22e5f6f172573dcfc190056.GridViewAdapter_ViewHolder p0, int p1) throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == ImageScalerTask.class)
-			mono.android.TypeManager.Activate ("Swaha_for_Android.ImageScalerTask, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.Widget.ImageButton, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", this, new java.lang.Object[] { p0 });
+			mono.android.TypeManager.Activate ("Swaha_for_Android.ImageScalerTask, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Swaha_for_Android.GridViewAdapter+ViewHolder, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null:System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", this, new java.lang.Object[] { p0, p1 });
 	}
 
 

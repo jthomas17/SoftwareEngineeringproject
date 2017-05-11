@@ -15,11 +15,13 @@ namespace Swaha_for_Android
 {
     class ImageScalerTask : AsyncTask<string, Java.Lang.Void, Bitmap>
     {
-        private readonly System.WeakReference imageButtonReference;
+        private GridViewAdapter.ViewHolder holder;
+        private int pos;
 
-        public ImageScalerTask(ImageButton tile)
+        public ImageScalerTask(GridViewAdapter.ViewHolder tile, int p)
         {
-            imageButtonReference = new WeakReference(tile);
+            holder = tile;
+            pos = p;
         }
 
         protected override Bitmap RunInBackground(params string[] @params)
@@ -29,21 +31,9 @@ namespace Swaha_for_Android
 
         protected override void OnPostExecute(Bitmap result)
         {
-            if (IsCancelled)
+            if (holder.Position == pos)
             {
-                result = null;
-            }
-
-            if (imageButtonReference != null)
-            {
-                ImageButton tile = (ImageButton)imageButtonReference.Target;
-                if (tile != null)
-                {
-                    if (result != null)
-                        tile.SetImageBitmap(result);
-                    else
-                        tile.SetImageResource(Resource.Drawable.Icon);
-                }
+                holder.Thumbnail.SetImageBitmap(result);
             }
         }
 

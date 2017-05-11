@@ -44,50 +44,45 @@ namespace Swaha_for_Android
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            var view = convertView ?? LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
-            var image = view.FindViewById<ImageButton>(Resource.Id.cellImage);
-            new ImageScalerTask(image).Execute(_gridItemLoader.gridItems[position].filestring);
-
-            return image;
-
             /*------------------------------------------------------------------------------------------------------------------------*/
 
-            //View itemView = convertView;
-            //ViewHolder viewHolder;
+            View itemView = convertView;
+            ViewHolder holder;
 
-            //if (itemView != null)
-            //{
-            //    viewHolder = (ViewHolder)itemView.Tag;
-            //}
-            //else   /* If convertView is null */
-            //{
-            //    viewHolder = new ViewHolder();
-            //    itemView = LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
+            if (itemView != null)
+            {
+                holder = (ViewHolder)itemView.Tag;
+                holder.IsRecycled = true;
+            }
+            else   /* If convertView is null */
+            {
+                holder = new ViewHolder();
+                holder.IsRecycled = false;
+                itemView = LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
 
-            //    ImageButton imgThumbnail = itemView.FindViewById<ImageButton>(Resource.Id.cellImage);
-            //    imgThumbnail.SetScaleType(ImageButton.ScaleType.CenterCrop);
-            //    //imgThumbnail.SetImageResource(Resource.Drawable.Icon);
-
-            //    viewHolder.Thumbnail = imgThumbnail;
-            //    itemView.Tag = viewHolder;
-
-            //}
-
+                // need to set the scale type before assinging it to the viewholder
+                ImageButton imgThumbnail = itemView.FindViewById<ImageButton>(Resource.Id.cellImage);
+                imgThumbnail.SetScaleType(ImageButton.ScaleType.CenterCrop);
+                
+                holder.Thumbnail = imgThumbnail;
+                itemView.Tag = holder;
+            }
+            holder.Thumbnail.SetImageResource(Resource.Drawable.Icon);
             /* TODO: async function that scales the images from the filepath goes here 
                 if (holder.imageView != null){new ImageScalerTask(imagefilepath)}
             */
+            holder.Position = position;
 
-            //if (viewHolder.Thumbnail != null)
-            //{
-            //    new ImageScalerTask(viewHolder.Thumbnail).Execute(_gridItemLoader.gridItems[position].filestring);
-            //}
-            //return itemView;
-
+            new ImageScalerTask(holder, position).Execute(_gridItemLoader.gridItems[position].filestring);
+            
+            return itemView;
         }
-        
+
         public class ViewHolder : Java.Lang.Object
         {
             public ImageButton Thumbnail { get; set; }
+            public int Position { get; set; }
+            public bool IsRecycled { get; set; }
         }
     }
 }
