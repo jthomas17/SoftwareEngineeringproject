@@ -44,40 +44,45 @@ namespace Swaha_for_Android
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            //var view = convertView ?? LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
-            //var image = view.FindViewById<ImageView>(Resource.Id.gridImage);
+            var view = convertView ?? LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
+            var image = view.FindViewById<ImageButton>(Resource.Id.cellImage);
+            new ImageScalerTask(image).Execute(_gridItemLoader.gridItems[position].filestring);
 
-            View itemView = convertView;
-            ViewHolder viewHolder;
+            return image;
 
-            if (itemView != null)
-            {
-                viewHolder = (ViewHolder)itemView.Tag;
-            }
-            else   /* If convertView is null */
-            {
-                viewHolder = new ViewHolder();
-                itemView = LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
+            /*------------------------------------------------------------------------------------------------------------------------*/
 
-                ImageButton imgThumbnail = itemView.FindViewById<ImageButton>(Resource.Id.cellImage);
-                imgThumbnail.SetScaleType(ImageButton.ScaleType.CenterCrop);
+            //View itemView = convertView;
+            //ViewHolder viewHolder;
 
-                viewHolder.Thumbnail = imgThumbnail;
-                itemView.Tag = viewHolder;
+            //if (itemView != null)
+            //{
+            //    viewHolder = (ViewHolder)itemView.Tag;
+            //}
+            //else   /* If convertView is null */
+            //{
+            //    viewHolder = new ViewHolder();
+            //    itemView = LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
 
-            }
-            //BitmapFactory.Options options = new BitmapFactory.Options();
-            //options.InSampleSize = 8;    
-            //Bitmap bitmap = BitmapFactory.DecodeFile(_gridItemLoader.gridItems[position].filestring, options);
-            //_gridItemLoader.gridItems[position].SetScaledImage(false);
+            //    ImageButton imgThumbnail = itemView.FindViewById<ImageButton>(Resource.Id.cellImage);
+            //    imgThumbnail.SetScaleType(ImageButton.ScaleType.CenterCrop);
+            //    //imgThumbnail.SetImageResource(Resource.Drawable.Icon);
+
+            //    viewHolder.Thumbnail = imgThumbnail;
+            //    itemView.Tag = viewHolder;
+
+            //}
 
             /* TODO: async function that scales the images from the filepath goes here 
                 if (holder.imageView != null){new ImageScalerTask(imagefilepath)}
             */
 
-            viewHolder.Thumbnail.SetImageBitmap(_gridItemLoader.gridItems[position].bitmap);
-            
-            return itemView;
+            //if (viewHolder.Thumbnail != null)
+            //{
+            //    new ImageScalerTask(viewHolder.Thumbnail).Execute(_gridItemLoader.gridItems[position].filestring);
+            //}
+            //return itemView;
+
         }
         
         public class ViewHolder : Java.Lang.Object
