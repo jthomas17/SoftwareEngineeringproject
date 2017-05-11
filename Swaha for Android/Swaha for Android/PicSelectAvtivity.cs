@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 
 using Android.Database;
 using Android.Provider;
@@ -29,17 +28,13 @@ namespace Swaha_for_Android
             // Set the layout
             SetContentView(Resource.Layout.PicSelect);
             gridLoader = new GridItemLoader(this);
-            gridAdapter = new GridViewAdapter(this, gridLoader);
-
             theGrid = FindViewById<GridView>(Resource.Id.mygridview);
-            
+            gridAdapter = new GridViewAdapter(this, gridLoader);
             theGrid.Adapter = gridAdapter;
-            theGrid.ScrollStateChanged += delegate
-            {
-                theGrid.InvalidateViews();
-            };
+
+            
         }
-        
+
         
     }
 }
