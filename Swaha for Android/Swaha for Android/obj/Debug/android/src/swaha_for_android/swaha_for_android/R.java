@@ -14,7 +14,8 @@ public final class R {
         public static final int theme_custom_background=0x7f050000;
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
+        public static final int android=0x7f020000;
+        public static final int icon=0x7f020001;
     }
     public static final class id {
         public static final int GoToPictureSelect=0x7f070001;
@@ -22,12 +23,16 @@ public final class R {
         public static final int imageView1=0x7f070002;
         public static final int myButton=0x7f070000;
         public static final int mygridview=0x7f070003;
+        public static final int start=0x7f070005;
+        public static final int stop=0x7f070006;
+        public static final int surface=0x7f070007;
     }
     public static final class layout {
         public static final int cameraroll=0x7f030000;
         public static final int main=0x7f030001;
         public static final int picselect=0x7f030002;
         public static final int picselectgridviewchildlayout=0x7f030003;
+        public static final int record=0x7f030004;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;
