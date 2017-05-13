@@ -61,10 +61,7 @@ namespace Swaha_for_Android
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Android = 2130837504;
-			
-			// aapt resource value: 0x7f020001
-			public const int Icon = 2130837505;
+			public const int Icon = 2130837504;
 			
 			static Drawable()
 			{
@@ -82,26 +79,29 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f070001
 			public const int GoToPictureSelect = 2131165185;
 			
-			// aapt resource value: 0x7f070004
-			public const int gridImage = 2131165188;
+			// aapt resource value: 0x7f070006
+			public const int fragment_container = 2131165190;
 			
-			// aapt resource value: 0x7f070002
-			public const int imageView1 = 2131165186;
+			// aapt resource value: 0x7f070005
+			public const int gridImage = 2131165189;
+			
+			// aapt resource value: 0x7f070003
+			public const int imageView1 = 2131165187;
 			
 			// aapt resource value: 0x7f070000
 			public const int myButton = 2131165184;
 			
-			// aapt resource value: 0x7f070003
-			public const int mygridview = 2131165187;
-			
-			// aapt resource value: 0x7f070005
-			public const int start = 2131165189;
-			
-			// aapt resource value: 0x7f070006
-			public const int stop = 2131165190;
+			// aapt resource value: 0x7f070004
+			public const int mygridview = 2131165188;
 			
 			// aapt resource value: 0x7f070007
 			public const int surface = 2131165191;
+			
+			// aapt resource value: 0x7f070008
+			public const int toggle = 2131165192;
+			
+			// aapt resource value: 0x7f070002
+			public const int video = 2131165186;
 			
 			static Id()
 			{
@@ -130,6 +130,9 @@ namespace Swaha_for_Android
 			
 			// aapt resource value: 0x7f030004
 			public const int Record = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int videofragment = 2130903045;
 			
 			static Layout()
 			{

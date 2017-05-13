@@ -102,6 +102,12 @@ namespace Swaha_for_Android
                 var PicSelectIntent = new Intent(this, typeof(PicSelectAvtivity));
                 StartActivity(PicSelectIntent);
             };
+            Button video = FindViewById<Button>(Resource.Id.video);
+            video.Click += delegate
+            {
+                var videoness = new Intent(this, typeof(RecordActivity));
+                StartActivity(videoness);
+            };
         }
     }
 }

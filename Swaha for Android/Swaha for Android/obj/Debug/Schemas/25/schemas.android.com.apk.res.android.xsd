@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>5/4/2017 4:07:32 AM</xs:documentation>
+    <xs:documentation>5/12/2017 4:52:56 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -16982,14 +16982,15 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkedTextView1" />
+            <xs:enumeration value="@id/details" />
+            <xs:enumeration value="@id/fragment" />
             <xs:enumeration value="@id/GoToPictureSelect" />
             <xs:enumeration value="@id/gridImage" />
             <xs:enumeration value="@id/imageView1" />
             <xs:enumeration value="@id/myButton" />
             <xs:enumeration value="@id/mygridview" />
-            <xs:enumeration value="@id/start" />
-            <xs:enumeration value="@id/stop" />
             <xs:enumeration value="@id/surface" />
+            <xs:enumeration value="@id/toggle" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
