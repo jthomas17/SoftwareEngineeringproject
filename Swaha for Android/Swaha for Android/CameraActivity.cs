@@ -84,7 +84,6 @@ namespace Swaha_for_Android
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
@@ -93,7 +92,7 @@ namespace Swaha_for_Android
                 CreateDirectoryForPictures();
 
                 Button button = FindViewById<Button>(Resource.Id.myButton);
-                _imageView = FindViewById<ImageView>(Resource.Id.imageView1);
+                //_imageView = FindViewById<ImageView>(Resource.Id.imageView1);
                 button.Click += TakeAPicture;
             }
             Button gotoPicSelect = FindViewById<Button>(Resource.Id.GoToPictureSelect);

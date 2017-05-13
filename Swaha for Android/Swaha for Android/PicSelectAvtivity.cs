@@ -34,10 +34,17 @@ namespace Swaha_for_Android
             theGrid = FindViewById<GridView>(Resource.Id.mygridview);
             
             theGrid.Adapter = gridAdapter;
+            theGrid.Scroll += delegate
+            {
+                gridAdapter.spinning = true;
+                gridAdapter.NotifyDataSetChanged();
+            };
             theGrid.ScrollStateChanged += delegate
             {
-                theGrid.InvalidateViews();
+                gridAdapter.spinning = false;
+                gridAdapter.NotifyDataSetChanged();
             };
+            
         }
         
         

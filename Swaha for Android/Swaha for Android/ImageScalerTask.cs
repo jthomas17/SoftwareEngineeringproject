@@ -17,7 +17,7 @@ namespace Swaha_for_Android
     {
         private GridViewAdapter.ViewHolder holder;
         private int pos;
-
+        
         public ImageScalerTask(GridViewAdapter.ViewHolder tile, int p)
         {
             holder = tile;
@@ -26,7 +26,12 @@ namespace Swaha_for_Android
 
         protected override Bitmap RunInBackground(params string[] @params)
         {
-            return scaleBitmap(@params[0]);
+
+            if (holder.Position == pos)
+            {
+                return scaleBitmap(@params[0]);
+            }
+            else return null;
         }
 
         protected override void OnPostExecute(Bitmap result)

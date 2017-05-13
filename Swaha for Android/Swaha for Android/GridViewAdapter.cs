@@ -20,11 +20,13 @@ namespace Swaha_for_Android
     {
         Context _context;
         GridItemLoader _gridItemLoader;
-        
+        public bool spinning;
+
         public GridViewAdapter(Context context, GridItemLoader gridItemLoader)
         {
             _context = context;
             _gridItemLoader = gridItemLoader;
+            spinning = false;
         }
 
         public override int Count
@@ -52,12 +54,12 @@ namespace Swaha_for_Android
             if (itemView != null)
             {
                 holder = (ViewHolder)itemView.Tag;
-                holder.IsRecycled = true;
+                
             }
             else   /* If convertView is null */
             {
                 holder = new ViewHolder();
-                holder.IsRecycled = false;
+                
                 itemView = LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
 
                 // need to set the scale type before assinging it to the viewholder
@@ -67,13 +69,15 @@ namespace Swaha_for_Android
                 holder.Thumbnail = imgThumbnail;
                 itemView.Tag = holder;
             }
-            holder.Thumbnail.SetImageResource(Resource.Drawable.Icon);
+            //holder.Thumbnail.SetImageResource(Resource.Drawable.Icon);
             /* TODO: async function that scales the images from the filepath goes here 
                 if (holder.imageView != null){new ImageScalerTask(imagefilepath)}
             */
             holder.Position = position;
-
-            new ImageScalerTask(holder, position).Execute(_gridItemLoader.gridItems[position].filestring);
+            if (spinning == false)
+            {
+                new ImageScalerTask(holder, position).Execute(_gridItemLoader.gridItems[position].filestring);
+            }
             
             return itemView;
         }
@@ -82,7 +86,7 @@ namespace Swaha_for_Android
         {
             public ImageButton Thumbnail { get; set; }
             public int Position { get; set; }
-            public bool IsRecycled { get; set; }
+            CancellationSignal cs { get; set; }
         }
     }
 }
