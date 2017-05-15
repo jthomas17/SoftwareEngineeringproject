@@ -152,4 +152,53 @@ C:\github\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Deb
 C:\github\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\github\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\github\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll.mdb
-C:\github\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.dll
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.pdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha_for_Android.Swaha_for_Android.apk
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha_for_Android.Swaha_for_Android-Signed.apk
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.pdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\bin\Swaha_for_Android.Swaha_for_Android.apk
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\picselect.xml
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\cameraroll.xml
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\picselectgridviewchildlayout.xml
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\record.xml
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\videofragment.xml
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\main.xml
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\values\strings.xml
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\icon.png
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\values\themes.xml
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\R.cs.flag
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\uploadflags.txt
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\download.jpg
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Java.Interop.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Microsoft.CSharp.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Mono.Android.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Mono.CSharp.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\mscorlib.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\System.Core.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\System.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\System.Net.Http.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\System.Xml.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\Swaha for Android.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.csprojResolveAssemblyReference.cache
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll.mdb
+C:\Repos\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.dll.mdb

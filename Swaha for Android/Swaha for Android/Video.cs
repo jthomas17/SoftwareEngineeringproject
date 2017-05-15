@@ -12,6 +12,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Util;
+using Android.Media;
+using Android.Graphics;
 
 namespace Swaha_for_Android
 {
@@ -35,11 +37,13 @@ namespace Swaha_for_Android
         private MediaProjectionManager mediaProjectionManager;
         private Button buttonToggle;
         private SurfaceView surfaceView;
+        private TextureView stexture;
+        private SurfaceTexture surfaceTT;
+        private Surface holder;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             if (savedInstanceState != null)
             {
                 resultCode = savedInstanceState.GetInt(STATE_RESULT_CODE);
@@ -58,7 +62,12 @@ namespace Swaha_for_Android
         public override void OnViewCreated(View view, Bundle savedInstanceState)
         {
             surfaceView = view.FindViewById<SurfaceView>(Resource.Id.surface);
+            //surfaceView.SetZOrderOnTop(true);
             surface = surfaceView.Holder.Surface;
+            //stexture = view.FindViewById<TextureView>(Resource.Id.textureView1);
+            surfaceTT = stexture.SurfaceTexture;
+            holder = new Surface(surfaceTT);
+            Toast.MakeText(Activity, surface.ToString(), ToastLength.Short).Show();
             buttonToggle = view.FindViewById<Button>(Resource.Id.toggle);
             buttonToggle.Click += delegate (object sender, EventArgs e)
             {
@@ -158,7 +167,7 @@ namespace Swaha_for_Android
         {
             virtualDisplay = mediaProjection.CreateVirtualDisplay("ScreenCapture",
                 surfaceView.Width, surfaceView.Height, screenDensity,
-                (DisplayFlags)VirtualDisplayFlags.AutoMirror, surface, null, null);
+                (DisplayFlags)VirtualDisplayFlags.AutoMirror, holder, null, null);
             buttonToggle.Text = "stop";
         }
         private void StopScreenCapture()

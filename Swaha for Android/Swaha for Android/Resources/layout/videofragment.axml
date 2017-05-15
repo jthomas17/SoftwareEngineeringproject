@@ -3,22 +3,19 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <imageView
-    android:id="@+id/imageview"
-    android:layout_width="match_parent"
-    android:layout_height="1000px"
-    android:layoutweight="1"
-    android:src="@drawable/Icon.png">
     <SurfaceView
-      android:id="@+id/surface"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_weight="1"/>
-  </imageView>
-  <Button
-    android:id="@+id/toggle"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="top"
-    android:text="start"/>
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="end"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="start" />
+    </LinearLayout>
 </LinearLayout>
