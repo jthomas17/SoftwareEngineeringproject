@@ -19,7 +19,6 @@ namespace Swaha_for_Android
         private Android.Net.Uri imageDefinition;
         private int imageId;
         private string imagePathString;
-        private Bitmap bip;
         
         public UserImage(Android.Net.Uri path, int id, string fileString)
         {
@@ -40,26 +39,6 @@ namespace Swaha_for_Android
         public string filestring
         {
             get { return imagePathString; }
-        }
-
-        public void SetScaledImage(bool positionFlag)
-        {
-            if (positionFlag == true)
-            {
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                options.InSampleSize = 8;
-                Bitmap bitmap = BitmapFactory.DecodeFile(imagePathString, options);
-                bip = bitmap;
-            }
-            else
-            {
-                bip = null;
-            }
-                
-        }
-        public Bitmap bitmap
-        {
-            get { return bip; }
         }
     }
 }

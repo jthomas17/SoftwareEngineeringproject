@@ -13,6 +13,7 @@ using Android.Views;
 using Android.Widget;
 using System.Threading.Tasks;
 using Android.Graphics.Drawables;
+using Android.Util;
 
 namespace Swaha_for_Android
 {
@@ -21,12 +22,23 @@ namespace Swaha_for_Android
         Context _context;
         GridItemLoader _gridItemLoader;
         public bool spinning;
+        public List<bool> selectedList;
 
         public GridViewAdapter(Context context, GridItemLoader gridItemLoader)
         {
             _context = context;
             _gridItemLoader = gridItemLoader;
             spinning = false;
+            selectedList = new List<bool>();
+            setSelectedList();
+        }
+
+        private void setSelectedList()
+        {
+            for (int i = 0; i < _gridItemLoader.gridItems.Capacity; i++)
+            {
+                selectedList.Add(false);
+            }
         }
 
         public override int Count
@@ -63,30 +75,33 @@ namespace Swaha_for_Android
                 itemView = LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
 
                 // need to set the scale type before assinging it to the viewholder
-                ImageButton imgThumbnail = itemView.FindViewById<ImageButton>(Resource.Id.cellImage);
-                imgThumbnail.SetScaleType(ImageButton.ScaleType.CenterCrop);
+                ImageView imgThumbnail = itemView.FindViewById<ImageView>(Resource.Id.cellImage);
+                imgThumbnail.SetScaleType(ImageView.ScaleType.CenterCrop);
                 
                 holder.Thumbnail = imgThumbnail;
                 itemView.Tag = holder;
             }
-            //holder.Thumbnail.SetImageResource(Resource.Drawable.Icon);
-            /* TODO: async function that scales the images from the filepath goes here 
-                if (holder.imageView != null){new ImageScalerTask(imagefilepath)}
-            */
+            //bool isitselected = selectedList[position];
+            
             holder.Position = position;
             if (spinning == false)
             {
                 new ImageScalerTask(holder, position).Execute(_gridItemLoader.gridItems[position].filestring);
+                
             }
+
+
             
             return itemView;
         }
 
+        
+
         public class ViewHolder : Java.Lang.Object
         {
-            public ImageButton Thumbnail { get; set; }
+            public ImageView Thumbnail { get; set; }
             public int Position { get; set; }
-            CancellationSignal cs { get; set; }
+            //CancellationSignal cs { get; set; }
         }
     }
 }

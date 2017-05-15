@@ -17,7 +17,7 @@ namespace Swaha_for_Android
     {
         private GridViewAdapter.ViewHolder holder;
         private int pos;
-        
+       // private readonly WeakReference<Bitmap> softRef;
         public ImageScalerTask(GridViewAdapter.ViewHolder tile, int p)
         {
             holder = tile;

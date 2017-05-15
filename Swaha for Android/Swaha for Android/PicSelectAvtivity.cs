@@ -21,6 +21,7 @@ namespace Swaha_for_Android
         private GridView theGrid;
         private GridViewAdapter gridAdapter;
         GridItemLoader gridLoader;
+        private List<UserImage> StoryImagesYo;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -32,8 +33,19 @@ namespace Swaha_for_Android
             gridAdapter = new GridViewAdapter(this, gridLoader);
 
             theGrid = FindViewById<GridView>(Resource.Id.mygridview);
-            
+
+            StoryImagesYo = new List<UserImage>();
+            theGrid.ItemClick += GridView_ItemClick;
             theGrid.Adapter = gridAdapter;
+            theGrid.ChoiceMode = ChoiceMode.Multiple;
+            Button toRecordActivityButton = FindViewById<Button>(Resource.Id.GoToRecordActivity);
+            toRecordActivityButton.Click += delegate
+            {
+                var RecordIntent = new Intent(this, typeof(RecordActivity));
+                RecordIntent.PutExtra("storybundle", StoryBundle());
+                StartActivity(RecordIntent);
+            };
+
             theGrid.Scroll += delegate
             {
                 gridAdapter.spinning = true;
@@ -46,7 +58,23 @@ namespace Swaha_for_Android
             };
             
         }
-        
-        
+
+        void GridView_ItemClick (object sender, AdapterView.ItemClickEventArgs e)
+        {
+            e.View.Selected = true;
+            StoryImagesYo.Add(gridAdapter[e.Position]);
+        }
+
+        public Bundle StoryBundle()
+        {
+            Bundle b = new Bundle();
+            List<string> list = new List<string>();
+            for (int i = 0; i < StoryImagesYo.Count; i++)
+            {
+                list.Add(StoryImagesYo[i].filestring);
+            }
+            b.PutStringArrayList("list", list);
+            return b;
+        }
     }
 }

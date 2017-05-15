@@ -79,8 +79,14 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f07000b
 			public const int GoToPictureSelect = 2131165195;
 			
-			// aapt resource value: 0x7f07000d
-			public const int cellImage = 2131165197;
+			// aapt resource value: 0x7f07000c
+			public const int GoToRecordActivity = 2131165196;
+			
+			// aapt resource value: 0x7f07000f
+			public const int RecordImage = 2131165199;
+			
+			// aapt resource value: 0x7f07000e
+			public const int cellImage = 2131165198;
 			
 			// aapt resource value: 0x7f070003
 			public const int imageView1 = 2131165187;
@@ -106,20 +112,11 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f07000a
 			public const int myButton = 2131165194;
 			
-			// aapt resource value: 0x7f07000c
-			public const int mygridview = 2131165196;
+			// aapt resource value: 0x7f07000d
+			public const int mygridview = 2131165197;
 			
 			// aapt resource value: 0x7f070002
 			public const int scrollView1 = 2131165186;
-			
-			// aapt resource value: 0x7f07000e
-			public const int start = 2131165198;
-			
-			// aapt resource value: 0x7f07000f
-			public const int stop = 2131165199;
-			
-			// aapt resource value: 0x7f070010
-			public const int surface = 2131165200;
 			
 			// aapt resource value: 0x7f070001
 			public const int textView1 = 2131165185;

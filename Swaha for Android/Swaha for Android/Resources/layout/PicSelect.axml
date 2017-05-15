@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mygridview"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:columnWidth="90dp"
-    android:numColumns="auto_fit"
-    android:verticalSpacing="10dp"
-    android:horizontalSpacing="10dp"
-    android:stretchMode="columnWidth"
-    android:gravity="center"
-    android:focusable="true"
-    android:clickable="true" />
+    android:layout_height="fill_parent">
+    <Button
+        android:id="@+id/GoToRecordActivity"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Next" />
+    <GridView
+        android:id="@+id/mygridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:focusable="true"
+        android:clickable="true"
+        android:listSelector="#11FFFF"/>
+</LinearLayout>
