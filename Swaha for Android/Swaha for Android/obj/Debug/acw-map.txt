@@ -14,6 +14,10 @@ Swaha_for_Android.PicSelectAvtivity, Swaha for Android;md5f6a8d907d22e5f6f172573
 Swaha_for_Android.PicSelectAvtivity, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f6a8d907d22e5f6f172573dcfc190056.PicSelectAvtivity
 Swaha_for_Android.PicSelectAvtivity;md5f6a8d907d22e5f6f172573dcfc190056.PicSelectAvtivity
 swaha_for_android.PicSelectAvtivity;md5f6a8d907d22e5f6f172573dcfc190056.PicSelectAvtivity
+Swaha_for_Android.Preview, Swaha for Android;md5f6a8d907d22e5f6f172573dcfc190056.Preview
+Swaha_for_Android.Preview, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f6a8d907d22e5f6f172573dcfc190056.Preview
+Swaha_for_Android.Preview;md5f6a8d907d22e5f6f172573dcfc190056.Preview
+swaha_for_android.Preview;md5f6a8d907d22e5f6f172573dcfc190056.Preview
 Swaha_for_Android.RecordActivity, Swaha for Android;md5f6a8d907d22e5f6f172573dcfc190056.RecordActivity
 Swaha_for_Android.RecordActivity, Swaha for Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f6a8d907d22e5f6f172573dcfc190056.RecordActivity
 Swaha_for_Android.RecordActivity;md5f6a8d907d22e5f6f172573dcfc190056.RecordActivity
