@@ -9,6 +9,7 @@ using Android.Provider;
 using System;
 using Java.IO;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Environment = Android.OS.Environment;
 using Uri = Android.Net.Uri;
 
@@ -20,8 +21,15 @@ namespace Swaha_for_Android
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView (Resource.Layout.OpeningPage);
-            StartActivity(typeof(CameraActivity));
+            ActionBar.Hide();
+            SetContentView(Resource.Layout.OpeningPage);
+
+            Handler h = new Handler();
+            Action LoadScreen = () =>
+             {
+                 StartActivity(typeof(CameraActivity));
+             };
+            h.PostDelayed(LoadScreen,5000);
 
             // Set our view from the "main" layout resource  
             // SetContentView (Resource.Layout.Main);

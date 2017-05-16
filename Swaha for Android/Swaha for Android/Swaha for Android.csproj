@@ -69,6 +69,7 @@
     <Compile Include="RecordActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleImageScalerTask.cs" />
     <Compile Include="UserImage.cs" />
     <Compile Include="Video.cs" />
   </ItemGroup>

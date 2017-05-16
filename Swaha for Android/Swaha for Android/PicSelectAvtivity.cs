@@ -30,6 +30,16 @@ namespace Swaha_for_Android
             SetContentView(Resource.Layout.SelectPictures);
 
             Button toRecord = FindViewById<Button>(Resource.Id.toRecord);
+            Button toCamRoll = FindViewById<Button>(Resource.Id.camRoll);
+            toCamRoll.Click += delegate {
+                var imageIntent = new Intent(Intent.ActionPick);
+                imageIntent.PutExtra(Intent.ExtraAllowMultiple, true);
+                imageIntent.SetType("image/*");
+                imageIntent.SetAction(Intent.ActionGetContent);
+                StartActivityForResult(
+                    Intent.CreateChooser(imageIntent, "Select photo"), 0);
+            };
+
             toRecord.Click += delegate
             {
                 var RecordIntent = new Intent(this, typeof(RecordActivity));

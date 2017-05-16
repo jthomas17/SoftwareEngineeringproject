@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>5/15/2017 6:10:09 PM</xs:documentation>
+    <xs:documentation>5/15/2017 9:11:06 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -21,7 +21,6 @@
             <xs:enumeration value="@layout/record" />
             <xs:enumeration value="@layout/recordscreen" />
             <xs:enumeration value="@layout/selectpictures" />
-            <xs:enumeration value="@layout/videofragment" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -79,7 +78,6 @@
             <xs:enumeration value="@layout/record" />
             <xs:enumeration value="@layout/recordscreen" />
             <xs:enumeration value="@layout/selectpictures" />
-            <xs:enumeration value="@layout/videofragment" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -137,7 +135,6 @@
             <xs:enumeration value="@layout/record" />
             <xs:enumeration value="@layout/recordscreen" />
             <xs:enumeration value="@layout/selectpictures" />
-            <xs:enumeration value="@layout/videofragment" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -195,7 +192,6 @@
             <xs:enumeration value="@layout/record" />
             <xs:enumeration value="@layout/recordscreen" />
             <xs:enumeration value="@layout/selectpictures" />
-            <xs:enumeration value="@layout/videofragment" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />

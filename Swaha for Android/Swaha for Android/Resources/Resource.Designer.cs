@@ -79,80 +79,71 @@ namespace Swaha_for_Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070010
-			public const int Description = 2131165200;
-			
-			// aapt resource value: 0x7f07000b
-			public const int GoToPictureSelect = 2131165195;
-			
-			// aapt resource value: 0x7f07000c
-			public const int GoToRecordActivity = 2131165196;
-			
-			// aapt resource value: 0x7f07000f
-			public const int Title = 2131165199;
-			
-			// aapt resource value: 0x7f070015
-			public const int button1 = 2131165205;
-			
-			// aapt resource value: 0x7f070017
-			public const int camRoll = 2131165207;
-			
-			// aapt resource value: 0x7f070012
-			public const int delete = 2131165202;
-			
-			// aapt resource value: 0x7f070014
-			public const int fragment_container = 2131165204;
-			
-			// aapt resource value: 0x7f07000e
-			public const int gridImage = 2131165198;
-			
-			// aapt resource value: 0x7f070003
-			public const int imageView1 = 2131165187;
+			// aapt resource value: 0x7f070009
+			public const int Description = 2131165193;
 			
 			// aapt resource value: 0x7f070004
-			public const int imageView2 = 2131165188;
+			public const int GoToPictureSelect = 2131165188;
 			
 			// aapt resource value: 0x7f070005
-			public const int imageView3 = 2131165189;
-			
-			// aapt resource value: 0x7f070006
-			public const int imageView4 = 2131165190;
-			
-			// aapt resource value: 0x7f070007
-			public const int imageView5 = 2131165191;
+			public const int GoToRecordActivity = 2131165189;
 			
 			// aapt resource value: 0x7f070008
-			public const int imageView6 = 2131165192;
+			public const int Title = 2131165192;
 			
-			// aapt resource value: 0x7f070009
-			public const int imageView7 = 2131165193;
+			// aapt resource value: 0x7f070014
+			public const int camRoll = 2131165204;
 			
-			// aapt resource value: 0x7f07000a
-			public const int myButton = 2131165194;
+			// aapt resource value: 0x7f07000b
+			public const int delete = 2131165195;
 			
 			// aapt resource value: 0x7f07000d
-			public const int mygridview = 2131165197;
+			public const int fragment_container = 2131165197;
+			
+			// aapt resource value: 0x7f070007
+			public const int gridImage = 2131165191;
+			
+			// aapt resource value: 0x7f070003
+			public const int myButton = 2131165187;
+			
+			// aapt resource value: 0x7f070006
+			public const int mygridview = 2131165190;
+			
+			// aapt resource value: 0x7f070010
+			public const int photoTray = 2131165200;
+			
+			// aapt resource value: 0x7f070011
+			public const int phototrayholder = 2131165201;
 			
 			// aapt resource value: 0x7f070002
 			public const int scrollView1 = 2131165186;
 			
-			// aapt resource value: 0x7f070016
-			public const int start = 2131165206;
+			// aapt resource value: 0x7f070012
+			public const int start = 2131165202;
 			
-			// aapt resource value: 0x7f070013
-			public const int stop = 2131165203;
+			// aapt resource value: 0x7f07000c
+			public const int stop = 2131165196;
 			
-			// aapt resource value: 0x7f070011
-			public const int surfaceView1 = 2131165201;
+			// aapt resource value: 0x7f07000a
+			public const int surfaceView1 = 2131165194;
 			
 			// aapt resource value: 0x7f070001
 			public const int textView1 = 2131165185;
 			
-			// aapt resource value: 0x7f070018
-			public const int toRecord = 2131165208;
+			// aapt resource value: 0x7f07000f
+			public const int textViewSelect = 2131165199;
+			
+			// aapt resource value: 0x7f070015
+			public const int toRecord = 2131165205;
 			
 			// aapt resource value: 0x7f070000
-			public const int toolbar1 = 2131165184;
+			public const int toolbarMain = 2131165184;
+			
+			// aapt resource value: 0x7f07000e
+			public const int toolbarRecord = 2131165198;
+			
+			// aapt resource value: 0x7f070013
+			public const int toolbarSelect = 2131165203;
 			
 			static Id()
 			{

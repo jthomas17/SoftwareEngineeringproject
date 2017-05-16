@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using Android.Graphics;
 using Android.App;
 using Android.Content;
 using Android.Media;
@@ -26,9 +27,30 @@ namespace Swaha_for_Android
         {
             base.OnCreate(savedInstanceState);
             ActionBar.Hide();
-            SetContentView(Resource.Layout.RecordScreen); 
-           
 
+            SetContentView(Resource.Layout.RecordScreen);
+
+            GridItemLoader gload = new GridItemLoader(this);
+
+            LinearLayout photoTray = FindViewById<LinearLayout>(Resource.Id.phototrayholder);
+
+            // this mimics the bundle data for testing purposes
+            List<string> bundleData = new List<string>();
+            for (int j = 0; j < 20; j++)
+            {
+                bundleData.Add(gload.gridItems[j].filestring);
+            }
+            
+            // async operation to implement photos to the top view
+            for (int i = 0; i < bundleData.Count; i++)
+            {
+                ImageView img = new ImageView(this);
+                photoTray.AddView(img);
+                new SimpleImageScalerTask(img).Execute(bundleData[i]);
+            }
+
+            //ArrayAdapter adapter = new ArrayAdapter(this, Resource.Layout.PicSelectGridViewChildLayout, data);
+            
             Button toPreview = FindViewById<Button>(Resource.Id.stop);
             toPreview.Click += delegate
             {

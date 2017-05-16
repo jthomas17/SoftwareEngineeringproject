@@ -13,33 +13,23 @@ using Android.Widget;
 
 namespace Swaha_for_Android
 {
-    class ImageScalerTask : AsyncTask<string, Java.Lang.Void, Bitmap>
+    class SimpleImageScalerTask : AsyncTask<string, Java.Lang.Void, Bitmap>
     {
-        private GridViewAdapter.ViewHolder holder;
-        private int pos;
+        private ImageView image;
         // private readonly WeakReference<Bitmap> softRef;
-        public ImageScalerTask(GridViewAdapter.ViewHolder tile, int p)
+        public SimpleImageScalerTask(ImageView tile)
         {
-            holder = tile;
-            pos = p;
+            image = tile;
         }
 
         protected override Bitmap RunInBackground(params string[] @params)
         {
-
-            if (holder.Position == pos)
-            {
-                return scaleBitmap(@params[0]);
-            }
-            else return null;
+            return scaleBitmap(@params[0]);
         }
 
         protected override void OnPostExecute(Bitmap result)
         {
-            if (holder.Position == pos)
-            {
-                holder.Thumbnail.SetImageBitmap(result);
-            }
+           image.SetImageBitmap(result);
         }
 
         private Bitmap scaleBitmap(string address)

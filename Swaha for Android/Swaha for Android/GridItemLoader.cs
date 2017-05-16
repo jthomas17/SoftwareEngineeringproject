@@ -30,12 +30,11 @@ namespace Swaha_for_Android
             var imageUri = MediaStore.Images.Media.ExternalContentUri;
 
             string[] projection = { MediaStore.Images.Media.InterfaceConsts.Data,
-                                    MediaStore.Images.Media.InterfaceConsts.Id,
-                                    MediaStore.Images.Thumbnails.Data};
+                                    MediaStore.Images.Media.InterfaceConsts.Id,};
 
             var loader = new CursorLoader(_activity, MediaStore.Images.Media.ExternalContentUri, projection, null, null, null);
             var cursor = (ICursor)loader.LoadInBackground();
-            int[] columnIndex = { cursor.GetColumnIndex(projection[0]), cursor.GetColumnIndex(projection[1]), cursor.GetColumnIndex(projection[2]) };
+            int[] columnIndex = { cursor.GetColumnIndex(projection[0]), cursor.GetColumnIndex(projection[1])};
 
             gridItems = new List<UserImage>();
 
@@ -52,11 +51,9 @@ namespace Swaha_for_Android
 
                     string pictureUriString = cursor.GetString(columnIndex[0]);
                     int pictureID = cursor.GetInt(columnIndex[1]);
-                    string thumbnailString = cursor.GetString(columnIndex[2]);
                     Android.Net.Uri pictureUri = Android.Net.Uri.Parse(pictureUriString);
-                    Android.Net.Uri thumbUri = Android.Net.Uri.Parse(thumbnailString);
 
-                    gridItems.Add(new UserImage(pictureUri, pictureID, pictureUriString, thumbUri, thumbnailString));
+                    gridItems.Add(new UserImage(pictureUri, pictureID, pictureUriString));
 
                 } while (cursor.MoveToNext());
             }

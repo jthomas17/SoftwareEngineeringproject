@@ -18,15 +18,12 @@ namespace Swaha_for_Android
         private Android.Net.Uri imageDefinition;
         private int imageId;
         private string imagePathString;
-        private string thumbnailPathString;
-        private Android.Net.Uri thumbnailPathUri;
-        public UserImage(Android.Net.Uri path, int id, string fileString, Android.Net.Uri thumbUri, string tpath)
+      
+        public UserImage(Android.Net.Uri path, int id, string fileString)
         {
             imageDefinition = path;
             imageId = id;
             imagePathString = fileString;
-            thumbnailPathString = tpath;
-            thumbnailPathUri = thumbUri;
         }
 
         public int id
@@ -41,14 +38,6 @@ namespace Swaha_for_Android
         public string filestring
         {
             get { return imagePathString; }
-        }
-        public string thumbstring
-        {
-            get { return thumbnailPathString; }
-        }
-        public Android.Net.Uri thumburi
-        {
-            get { return thumbnailPathUri; }
         }
     }
 
