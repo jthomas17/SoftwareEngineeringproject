@@ -25,12 +25,22 @@ namespace Swaha_for_Android
             // Create your application here
             string path = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/testing.mp4";
             var video = FindViewById<VideoView>(Resource.Id.surfaceView1);
-            
+            var save = FindViewById<Button>(Resource.Id.delete);
             var uri = Android.Net.Uri.Parse(path);
+
             play.Click += delegate
             {
                 video.SetVideoURI(uri);
                 video.Start();
+            };
+            save.Click += delegate
+            {
+                var email = new Intent(Intent.ActionSend);
+                email.PutExtra(Intent.ExtraEmail, new[] { "jthomas17@my.whitworth.edu" });
+                email.PutExtra(Intent.ExtraSubject, "Sample email with attachment");
+                email.PutExtra(Intent.ExtraStream, uri);
+                email.SetType("message/rfc822");
+                this.StartActivity(Intent.CreateChooser(email, "Send..."));
             };
         }
     }
