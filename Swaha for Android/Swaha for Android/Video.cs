@@ -63,7 +63,10 @@ namespace Swaha_for_Android
         {
             surfaceView = view.FindViewById<SurfaceView>(Resource.Id.surface);
             //surfaceView.SetZOrderOnTop(true);
+            surfaceView.Holder.SurfaceFrame.Top = 20;
+            surfaceView.Holder.SetFixedSize(500, 500);
             surface = surfaceView.Holder.Surface;
+            
             //stexture = view.FindViewById<TextureView>(Resource.Id.textureView1);
             surfaceTT = stexture.SurfaceTexture;
             holder = new Surface(surfaceTT);
