@@ -52,13 +52,13 @@ namespace Swaha_for_Android
             // Create your fragment here
         }
 
-        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-        {
+        //public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+        //{
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-            return inflater.Inflate(Resource.Layout.videofragment, container, false);
-        }
-
+            //return inflater.Inflate(Resource.Layout.videofragment, container, false);
+       // }
+       /*
         public override void OnViewCreated(View view, Bundle savedInstanceState)
         {
             surfaceView = view.FindViewById<SurfaceView>(Resource.Id.surface);
@@ -80,7 +80,7 @@ namespace Swaha_for_Android
                     StopScreenCapture();
             };
         }
-
+        */
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
             base.OnActivityCreated(savedInstanceState);

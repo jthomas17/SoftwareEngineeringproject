@@ -2,7 +2,7 @@
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <SelectedDevice>Samsung SM-G930V</SelectedDevice>
-    <DefaultDevice>VisualStudio_android-23_arm_tablet</DefaultDevice>
+    <DefaultDevice>Nexus_5X_API_23</DefaultDevice>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

@@ -88,7 +88,16 @@
     <AndroidResource Include="Resources\layout\Record.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\videofragment.axml">
+    <AndroidResource Include="Resources\layout\OpeningPage.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Preview.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\RecordScreen.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SelectPictures.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -20,7 +20,7 @@ namespace Swaha_for_Android
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
+            SetContentView (Resource.Layout.OpeningPage);
             StartActivity(typeof(CameraActivity));
 
             // Set our view from the "main" layout resource  

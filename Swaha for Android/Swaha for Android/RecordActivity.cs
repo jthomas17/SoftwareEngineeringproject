@@ -26,16 +26,17 @@ namespace Swaha_for_Android
         {
             base.OnCreate(savedInstanceState);
             ActionBar.Hide();
-            SetContentView(Resource.Layout.Record); 
-            
-            if(savedInstanceState == null)
-            {
-                var video = new Video();
-                var ft = FragmentManager.BeginTransaction();
-                ft.Add(Resource.Id.fragment_container, video);
-                ft.Commit();
+            SetContentView(Resource.Layout.RecordScreen); 
+           
 
-            }
+            Button toPreview = FindViewById<Button>(Resource.Id.stop);
+            toPreview.Click += delegate
+            {
+                // Add an activity that is for previewing video
+                // currently loops back to main
+                var PreviewIntent = new Intent(this, typeof(MainActivity));
+                StartActivity(PreviewIntent);
+            };
         }
     }
 }

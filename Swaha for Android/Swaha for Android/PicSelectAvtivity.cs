@@ -25,12 +25,21 @@ namespace Swaha_for_Android
         {
             base.OnCreate(savedInstanceState);
 
+            ActionBar.Hide();
             // Set the layout
-            SetContentView(Resource.Layout.PicSelect);
-            gridLoader = new GridItemLoader(this);
-            theGrid = FindViewById<GridView>(Resource.Id.mygridview);
-            gridAdapter = new GridViewAdapter(this, gridLoader);
-            theGrid.Adapter = gridAdapter;
+            SetContentView(Resource.Layout.SelectPictures);
+
+            Button toRecord = FindViewById<Button>(Resource.Id.toRecord);
+            toRecord.Click += delegate
+            {
+                var RecordIntent = new Intent(this, typeof(RecordActivity));
+                StartActivity(RecordIntent);
+            };
+
+            //gridLoader = new GridItemLoader(this);
+            //theGrid = FindViewById<GridView>(Resource.Id.mygridview);
+            //gridAdapter = new GridViewAdapter(this, gridLoader);
+            //theGrid.Adapter = gridAdapter;
         }
     }
 }

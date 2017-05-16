@@ -85,6 +85,7 @@ namespace Swaha_for_Android
         {
             base.OnCreate(bundle);
 
+            ActionBar.Hide();
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
@@ -102,12 +103,13 @@ namespace Swaha_for_Android
                 var PicSelectIntent = new Intent(this, typeof(PicSelectAvtivity));
                 StartActivity(PicSelectIntent);
             };
-            Button video = FindViewById<Button>(Resource.Id.video);
-            video.Click += delegate
-            {
-                var videoness = new Intent(this, typeof(RecordActivity));
-                StartActivity(videoness);
-            };
+
+            //Button video = FindViewById<Button>(Resource.Id.video);
+            //video.Click += delegate
+            //{
+              //  var videoness = new Intent(this, typeof(RecordActivity));
+               // StartActivity(videoness);
+            //};
         }
     }
 }
