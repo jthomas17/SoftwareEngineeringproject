@@ -40,6 +40,22 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#8B0000"
+            android:text="Preview Video"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:id="@+id/Play_Video"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="2dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
         <Button
             android:layout_width="wrap_content"

@@ -66,6 +66,7 @@
     <Compile Include="GridViewAdapter.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="PicSelectAvtivity.cs" />
+    <Compile Include="Preview.cs" />
     <Compile Include="RecordActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

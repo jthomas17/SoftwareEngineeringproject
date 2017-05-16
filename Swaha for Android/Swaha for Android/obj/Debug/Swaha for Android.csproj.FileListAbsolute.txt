@@ -212,7 +212,6 @@ C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debu
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\cameraroll.xml
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\picselectgridviewchildlayout.xml
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\record.xml
-C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\videofragment.xml
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\main.xml
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\values\strings.xml
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\icon.png
@@ -248,7 +247,6 @@ C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debu
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
-C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll.mdb
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\record.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\openingpage.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\preview.xml
@@ -256,4 +254,9 @@ C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringprojec
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\selectpictures.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\download.jpg
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll.mdb
-C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.dll.mdb
+C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\openingpage.xml
+C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\preview.xml
+C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\recordscreen.xml
+C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\selectpictures.xml
+C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll.mdb
+C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.dll.mdb

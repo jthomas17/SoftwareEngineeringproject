@@ -88,20 +88,23 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f07000c
 			public const int GoToRecordActivity = 2131165196;
 			
+			// aapt resource value: 0x7f070012
+			public const int Play_Video = 2131165202;
+			
 			// aapt resource value: 0x7f07000f
 			public const int Title = 2131165199;
 			
+			// aapt resource value: 0x7f070016
+			public const int button1 = 2131165206;
+			
+			// aapt resource value: 0x7f070018
+			public const int camRoll = 2131165208;
+			
+			// aapt resource value: 0x7f070013
+			public const int delete = 2131165203;
+			
 			// aapt resource value: 0x7f070015
-			public const int button1 = 2131165205;
-			
-			// aapt resource value: 0x7f070017
-			public const int camRoll = 2131165207;
-			
-			// aapt resource value: 0x7f070012
-			public const int delete = 2131165202;
-			
-			// aapt resource value: 0x7f070014
-			public const int fragment_container = 2131165204;
+			public const int fragment_container = 2131165205;
 			
 			// aapt resource value: 0x7f07000e
 			public const int gridImage = 2131165198;
@@ -136,11 +139,11 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f070002
 			public const int scrollView1 = 2131165186;
 			
-			// aapt resource value: 0x7f070016
-			public const int start = 2131165206;
+			// aapt resource value: 0x7f070017
+			public const int start = 2131165207;
 			
-			// aapt resource value: 0x7f070013
-			public const int stop = 2131165203;
+			// aapt resource value: 0x7f070014
+			public const int stop = 2131165204;
 			
 			// aapt resource value: 0x7f070011
 			public const int surfaceView1 = 2131165201;
@@ -148,8 +151,8 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f070001
 			public const int textView1 = 2131165185;
 			
-			// aapt resource value: 0x7f070018
-			public const int toRecord = 2131165208;
+			// aapt resource value: 0x7f070019
+			public const int toRecord = 2131165209;
 			
 			// aapt resource value: 0x7f070000
 			public const int toolbar1 = 2131165184;

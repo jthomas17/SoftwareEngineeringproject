@@ -34,7 +34,7 @@ namespace Swaha_for_Android
             {
                 // Add an activity that is for previewing video
                 // currently loops back to main
-                var PreviewIntent = new Intent(this, typeof(MainActivity));
+                var PreviewIntent = new Intent(this, typeof(Preview));
                 StartActivity(PreviewIntent);
             };
         }
