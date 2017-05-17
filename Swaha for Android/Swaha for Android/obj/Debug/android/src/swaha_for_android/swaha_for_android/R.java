@@ -16,52 +16,32 @@ public final class R {
     public static final class drawable {
         public static final int download=0x7f020000;
         public static final int icon=0x7f020001;
+        public static final int iconlogo=0x7f020002;
     }
     public static final class id {
-        public static final int Description=0x7f070010;
-        public static final int GoToPictureSelect=0x7f07000b;
-        public static final int GoToRecordActivity=0x7f07000c;
-        public static final int Play_Video=0x7f070012;
-        public static final int Title=0x7f07000f;
-<<<<<<< HEAD
-        public static final int camRoll=0x7f07001a;
-        public static final int delete=0x7f070012;
-        public static final int fragment_container=0x7f070014;
-=======
-        public static final int button1=0x7f070016;
-        public static final int camRoll=0x7f070018;
-        public static final int delete=0x7f070013;
-        public static final int fragment_container=0x7f070015;
->>>>>>> origin/Take2
-        public static final int gridImage=0x7f07000e;
-        public static final int imageView1=0x7f070003;
-        public static final int imageView2=0x7f070004;
-        public static final int imageView3=0x7f070005;
-        public static final int imageView4=0x7f070006;
-        public static final int imageView5=0x7f070007;
-        public static final int imageView6=0x7f070008;
-        public static final int imageView7=0x7f070009;
-        public static final int myButton=0x7f07000a;
-        public static final int mygridview=0x7f07000d;
-        public static final int photoTray=0x7f070017;
-        public static final int phototrayholder=0x7f070018;
+        public static final int Description=0x7f070009;
+        public static final int GoToPictureSelect=0x7f070004;
+        public static final int GoToRecordActivity=0x7f070005;
+        public static final int Play_Video=0x7f07000b;
+        public static final int Title=0x7f070008;
+        public static final int camRoll=0x7f070015;
+        public static final int delete=0x7f07000c;
+        public static final int fragment_container=0x7f07000e;
+        public static final int gridImage=0x7f070007;
+        public static final int myButton=0x7f070003;
+        public static final int mygridview=0x7f070006;
+        public static final int photoTray=0x7f070011;
+        public static final int phototrayholder=0x7f070012;
         public static final int scrollView1=0x7f070002;
-<<<<<<< HEAD
-        public static final int start=0x7f070019;
-        public static final int stop=0x7f070013;
-        public static final int surfaceView1=0x7f070011;
+        public static final int start=0x7f070013;
+        public static final int stop=0x7f07000d;
+        public static final int surfaceView1=0x7f07000a;
         public static final int textView1=0x7f070001;
-        public static final int textViewSelect=0x7f070016;
-        public static final int toRecord=0x7f07001b;
-=======
-        public static final int start=0x7f070017;
-        public static final int stop=0x7f070014;
-        public static final int surfaceView1=0x7f070011;
-        public static final int textView1=0x7f070001;
-        public static final int toRecord=0x7f070019;
->>>>>>> origin/Take2
-        public static final int toolbar1=0x7f070000;
-        public static final int toolbarRecord=0x7f070015;
+        public static final int textViewSelect=0x7f070010;
+        public static final int toRecord=0x7f070016;
+        public static final int toolbarMain=0x7f070000;
+        public static final int toolbarRecord=0x7f07000f;
+        public static final int toolbarSelect=0x7f070014;
     }
     public static final class layout {
         public static final int cameraroll=0x7f030000;
