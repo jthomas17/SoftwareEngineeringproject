@@ -94,7 +94,7 @@ namespace Swaha_for_Android
                 CreateDirectoryForPictures();
 
                 Button button = FindViewById<Button>(Resource.Id.myButton);
-                _imageView = FindViewById<ImageView>(Resource.Id.imageView1);
+                //_imageView = FindViewById<ImageView>(Resource.Id.imageView1);
                 button.Click += TakeAPicture;
             }
             Button gotoPicSelect = FindViewById<Button>(Resource.Id.GoToPictureSelect);

@@ -15,7 +15,7 @@ using Uri = Android.Net.Uri;
 
 namespace Swaha_for_Android
 {
-    [Activity(Label = "Swaha_for_Android", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Swaha for Android", MainLauncher = true, Icon = "@drawable/ICONLOGO")]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
@@ -29,7 +29,7 @@ namespace Swaha_for_Android
              {
                  StartActivity(typeof(CameraActivity));
              };
-            h.PostDelayed(LoadScreen,5000);
+            h.PostDelayed(LoadScreen,4000);
 
             // Set our view from the "main" layout resource  
             // SetContentView (Resource.Layout.Main);
