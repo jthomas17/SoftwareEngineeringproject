@@ -64,8 +64,9 @@
     <Compile Include="CameraActivity.cs" />
     <Compile Include="GridItemLoader.cs" />
     <Compile Include="GridViewAdapter.cs" />
+    <Compile Include="ImageScalerTask.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="PicSelectAvtivity.cs" />
+    <Compile Include="SelectPicturesActivity.cs" />
     <Compile Include="Preview.cs" />
     <Compile Include="RecordActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -84,7 +85,7 @@
     <AndroidResource Include="Resources\layout\CameraRoll.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\PicSelectGridViewChildLayout.axml">
+    <AndroidResource Include="Resources\layout\GridTile.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Record.axml">

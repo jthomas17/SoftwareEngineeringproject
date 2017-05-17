@@ -252,7 +252,6 @@ C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringprojec
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\recordscreen.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\selectpictures.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\download.jpg
-C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll.mdb
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\openingpage.xml
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\preview.xml
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\recordscreen.xml
@@ -294,3 +293,5 @@ C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\iconlogo.png
+C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\iconlogo.png
+C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll.mdb

@@ -15,35 +15,33 @@ using Android.Graphics.Drawables;
 
 namespace Swaha_for_Android
 {
-    class GridViewAdapter : BaseAdapter<UserImage>
+    class GridViewAdapter : BaseAdapter<string>
     {
         Context _context;
-        Activity _activity;
-        GridItemLoader _gridItemLoader;
-
+        List<string> _list;
+        //Activity _activity;
+        //GridItemLoader _gridItemLoader;
         /*
-        public GridViewAdapter(Activity activity, GridItemLoader gridItemLoader)
-        {
-            _activity = activity;
-            _gridItemLoader = gridItemLoader;
-        }
-        */
         public GridViewAdapter(Context context, GridItemLoader gridItemLoader)
         {
             _context = context;
             _gridItemLoader = gridItemLoader;
         }
+        */
 
+        public GridViewAdapter(Context c, List<string> list)
+        {
+            _context = c;
+            _list = list;
+        }
         public override int Count
         {
-            get { return _gridItemLoader.gridItems.Count; }
+            get { return _list.Count; }
         }
-
-        public override UserImage this[int position]
+        public override string this[int position]
         {
-            get { return _gridItemLoader.gridItems[position]; }
+            get {return _list[position]; }
         }
-
         public override long GetItemId(int position)
         {
             return position;
@@ -51,21 +49,42 @@ namespace Swaha_for_Android
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            var view = convertView ?? LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
-            var image = view.FindViewById<ImageView>(Resource.Id.gridImage);
+            View itemView = convertView;
+            ViewHolder holder;
 
-            //image.SetScaleType(ImageView.ScaleType.CenterCrop);
-            //image.SetImageURI(imageList[position].uri);
-            //BitmapFactory.Options options = await GetBitmapOptionsOfImageAsync(_gridItemLoader.gridItems[position].filestring);
+            if (itemView != null)
+            {
+                holder = (ViewHolder)itemView.Tag;
 
-            BitmapFactory.Options options = new BitmapFactory.Options();
-            options.InSampleSize = 8;
-            Bitmap bitmap = BitmapFactory.DecodeFile(_gridItemLoader.gridItems[position].filestring, options);
-            //image.SetImageURI(_gridItemLoader.gridItems[position].thumburi);
-            image.SetImageBitmap(bitmap);
-            //bitmap.Recycle();
-            return view;
+            }
+            else   /* If convertView is null */
+            {
+                holder = new ViewHolder();
+
+                itemView = LayoutInflater.From(_context).Inflate(Resource.Layout.GridTile, parent, false);
+
+                // need to set the scale type before assinging it to the viewholder
+                ImageButton imgThumbnail = itemView.FindViewById<ImageButton>(Resource.Id.gridImage);
+                imgThumbnail.SetScaleType(ImageButton.ScaleType.CenterCrop);
+
+                holder.Thumbnail = imgThumbnail;
+                itemView.Tag = holder;
+            }
+            //holder.Thumbnail.SetImageResource(Resource.Drawable.Icon);
+            /* TODO: async function that scales the images from the filepath goes here 
+                if (holder.imageView != null){new ImageScalerTask(imagefilepath)}
+            */
+            holder.Position = position;
+            new ImageScalerTask(holder, position).Execute(_list[position]);
+    
+
+            return itemView;
         }
-        
+
+        public class ViewHolder : Java.Lang.Object
+        {
+            public ImageButton Thumbnail { get; set; }
+            public int Position { get; set; }
+        }
     }
 }

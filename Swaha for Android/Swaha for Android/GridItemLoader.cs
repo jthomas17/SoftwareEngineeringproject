@@ -32,7 +32,7 @@ namespace Swaha_for_Android
             string[] projection = { MediaStore.Images.Media.InterfaceConsts.Data,
                                     MediaStore.Images.Media.InterfaceConsts.Id,};
 
-            var loader = new CursorLoader(_activity, MediaStore.Images.Media.ExternalContentUri, projection, null, null, null);
+            var loader = new CursorLoader(_activity, imageUri, projection, null, null, null);
             var cursor = (ICursor)loader.LoadInBackground();
             int[] columnIndex = { cursor.GetColumnIndex(projection[0]), cursor.GetColumnIndex(projection[1])};
 

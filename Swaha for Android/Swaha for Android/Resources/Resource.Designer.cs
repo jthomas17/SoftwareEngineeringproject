@@ -85,11 +85,11 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f070009
 			public const int Description = 2131165193;
 			
-			// aapt resource value: 0x7f070004
-			public const int GoToPictureSelect = 2131165188;
-			
 			// aapt resource value: 0x7f070005
-			public const int GoToRecordActivity = 2131165189;
+			public const int GoToPictureSelect = 2131165189;
+			
+			// aapt resource value: 0x7f070006
+			public const int GoToRecordActivity = 2131165190;
 			
 			// aapt resource value: 0x7f07000b
 			public const int Play_Video = 2131165195;
@@ -106,14 +106,14 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f07000e
 			public const int fragment_container = 2131165198;
 			
+			// aapt resource value: 0x7f070000
+			public const int gridImage = 2131165184;
+			
+			// aapt resource value: 0x7f070004
+			public const int myButton = 2131165188;
+			
 			// aapt resource value: 0x7f070007
-			public const int gridImage = 2131165191;
-			
-			// aapt resource value: 0x7f070003
-			public const int myButton = 2131165187;
-			
-			// aapt resource value: 0x7f070006
-			public const int mygridview = 2131165190;
+			public const int mygridview = 2131165191;
 			
 			// aapt resource value: 0x7f070011
 			public const int photoTray = 2131165201;
@@ -121,8 +121,8 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f070012
 			public const int phototrayholder = 2131165202;
 			
-			// aapt resource value: 0x7f070002
-			public const int scrollView1 = 2131165186;
+			// aapt resource value: 0x7f070003
+			public const int scrollView1 = 2131165187;
 			
 			// aapt resource value: 0x7f070013
 			public const int start = 2131165203;
@@ -133,8 +133,8 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f07000a
 			public const int surfaceView1 = 2131165194;
 			
-			// aapt resource value: 0x7f070001
-			public const int textView1 = 2131165185;
+			// aapt resource value: 0x7f070002
+			public const int textView1 = 2131165186;
 			
 			// aapt resource value: 0x7f070010
 			public const int textViewSelect = 2131165200;
@@ -142,8 +142,8 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f070016
 			public const int toRecord = 2131165206;
 			
-			// aapt resource value: 0x7f070000
-			public const int toolbarMain = 2131165184;
+			// aapt resource value: 0x7f070001
+			public const int toolbarMain = 2131165185;
 			
 			// aapt resource value: 0x7f07000f
 			public const int toolbarRecord = 2131165199;
@@ -168,16 +168,16 @@ namespace Swaha_for_Android
 			public const int CameraRoll = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int GridTile = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int OpeningPage = 2130903042;
+			public const int Main = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int PicSelect = 2130903043;
+			public const int OpeningPage = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int PicSelectGridViewChildLayout = 2130903044;
+			public const int PicSelect = 2130903044;
 			
 			// aapt resource value: 0x7f030005
 			public const int Preview = 2130903045;
