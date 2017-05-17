@@ -64,8 +64,8 @@ namespace Swaha_for_Android
                 itemView = LayoutInflater.From(_context).Inflate(Resource.Layout.GridTile, parent, false);
 
                 // need to set the scale type before assinging it to the viewholder
-                ImageButton imgThumbnail = itemView.FindViewById<ImageButton>(Resource.Id.gridImage);
-                imgThumbnail.SetScaleType(ImageButton.ScaleType.CenterCrop);
+                ImageView imgThumbnail = itemView.FindViewById<ImageView>(Resource.Id.gridImage);
+                imgThumbnail.SetScaleType(ImageView.ScaleType.CenterCrop);
 
                 holder.Thumbnail = imgThumbnail;
                 itemView.Tag = holder;
@@ -83,7 +83,7 @@ namespace Swaha_for_Android
 
         public class ViewHolder : Java.Lang.Object
         {
-            public ImageButton Thumbnail { get; set; }
+            public ImageView Thumbnail { get; set; }
             public int Position { get; set; }
         }
     }

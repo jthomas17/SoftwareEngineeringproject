@@ -101,7 +101,6 @@ C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\R.cs.flag
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\uploadflags.txt
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.dll.mdb
-C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\picselectgridviewchildlayout.xml
 C:\github\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.dll
 C:\github\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.pdb
 C:\github\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha_for_Android.Swaha_for_Android.apk
@@ -294,4 +293,8 @@ C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\iconlogo.png
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\iconlogo.png
+C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\gridtile.xml
+C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\transparentplay.png
+C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\playbutton.jpg
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll.mdb
+C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.dll.mdb

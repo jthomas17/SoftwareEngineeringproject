@@ -29,11 +29,11 @@ namespace Swaha_for_Android
 
             // Set the layout
             SetContentView(Resource.Layout.SelectPictures);
-            
+
             // Set references to views
             Button toRecord = FindViewById<Button>(Resource.Id.toRecord);
             Button toCamRoll = FindViewById<Button>(Resource.Id.camRoll);
-            theGrid = FindViewById<GridView>(Resource.Id.mygridview);
+            theGrid = FindViewById<GridView>(Resource.Id.SelectPicturesGrid);
 
             // Get grid collection ready
             list = new List<string>();
@@ -41,7 +41,8 @@ namespace Swaha_for_Android
             theGrid.Adapter = gridAdapter;
 
             // Add photo delegate
-            toCamRoll.Click += delegate {
+            toCamRoll.Click += delegate
+            {
                 var imageIntent = new Intent(Intent.ActionPick);
                 imageIntent.SetType("image/*");
                 imageIntent.SetAction(Intent.ActionGetContent);
@@ -68,10 +69,34 @@ namespace Swaha_for_Android
         }
 
 
-        public void AddUriToList(Android.Net.Uri uri)
+        private void AddUriToList(Android.Net.Uri uri)
         {
-            list.Add(uri.Path);
+            list.Add(GetPathToImage(uri));
             gridAdapter.NotifyDataSetChanged();
+        }
+
+        private string GetPathToImage(Android.Net.Uri uri)
+        {
+            string doc_id = "";
+            using (var c1 = ContentResolver.Query(uri, null, null, null, null))
+            {
+                c1.MoveToFirst();
+                string document_id = c1.GetString(0);
+                doc_id = document_id.Substring(document_id.LastIndexOf(":") + 1);
+            }
+
+            string path = null;
+
+            // The projection contains the columns we want to return in our query.
+            string selection = MediaStore.Images.Media.InterfaceConsts.Id + " =? ";
+            using (var cursor = ContentResolver.Query(Android.Provider.MediaStore.Images.Media.ExternalContentUri, null, selection, new string[] { doc_id }, null))
+            {
+                if (cursor == null) return path;
+                var columnIndex = cursor.GetColumnIndexOrThrow(Android.Provider.MediaStore.Images.Media.InterfaceConsts.Data);
+                cursor.MoveToFirst();
+                path = cursor.GetString(columnIndex);
+            }
+            return path;
         }
     }
 }

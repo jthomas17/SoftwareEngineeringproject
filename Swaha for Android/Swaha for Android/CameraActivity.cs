@@ -100,8 +100,8 @@ namespace Swaha_for_Android
             Button gotoPicSelect = FindViewById<Button>(Resource.Id.GoToPictureSelect);
             gotoPicSelect.Click += delegate
             {
-                var PicSelectIntent = new Intent(this, typeof(PicSelectAvtivity));
-                StartActivity(PicSelectIntent);
+                var SelectPicturesIntent = new Intent(this, typeof(SelectPicturesActivity));
+                StartActivity(SelectPicturesIntent);
             };
 
             //Button video = FindViewById<Button>(Resource.Id.video);

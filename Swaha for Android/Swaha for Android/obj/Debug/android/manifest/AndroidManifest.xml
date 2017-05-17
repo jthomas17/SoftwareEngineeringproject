@@ -14,7 +14,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="PicSelectAvtivity" android:name="md5f6a8d907d22e5f6f172573dcfc190056.PicSelectAvtivity" />
+    <activity android:label="SelectPicturesActivity" android:name="md5f6a8d907d22e5f6f172573dcfc190056.SelectPicturesActivity" />
     <activity android:label="Preview" android:name="md5f6a8d907d22e5f6f172573dcfc190056.Preview" />
     <activity android:label="RecordActivity" android:name="md5f6a8d907d22e5f6f172573dcfc190056.RecordActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Swaha_for_Android.Swaha_for_Android.mono.MonoRuntimeProvider.__mono_init__" />
