@@ -22,7 +22,6 @@ namespace Swaha_for_Android
     [Activity(Label = "RecordActivity")]
     public class RecordActivity : Activity
     {
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -33,6 +32,16 @@ namespace Swaha_for_Android
             GridItemLoader gload = new GridItemLoader(this);
 
             LinearLayout photoTray = FindViewById<LinearLayout>(Resource.Id.phototrayholder);
+
+            Button Delete = FindViewById<Button>(Resource.Id.delete);
+            Delete.Click += (sender, args) =>
+            {
+                var confirm = new AlertDialog.Builder(this);
+                confirm.SetMessage("Are you sure you want to delete this story?");
+                confirm.SetPositiveButton("Yes", (s, e) => { /* do something on OK click */ });
+                confirm.SetNegativeButton("No", (s, e) => { /* do something on Cancel click */ });
+                confirm.Create().Show();
+            };
 
             // this mimics the bundle data for testing purposes
             List<string> bundleData = new List<string>();
@@ -60,5 +69,6 @@ namespace Swaha_for_Android
                 StartActivity(PreviewIntent);
             };
         }
+        
     }
 }

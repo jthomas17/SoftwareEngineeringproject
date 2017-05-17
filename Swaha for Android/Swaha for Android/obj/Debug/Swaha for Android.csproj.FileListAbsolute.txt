@@ -294,3 +294,5 @@ C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\iconlogo.png
+C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\transparentplay.png
+C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\playbutton.jpg
