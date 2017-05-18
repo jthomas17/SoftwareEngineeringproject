@@ -22,6 +22,7 @@ namespace Swaha_for_Android
     [Activity(Label = "RecordActivity")]
     public class RecordActivity : Activity
     {
+        IList<string> bundledList;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -29,7 +30,7 @@ namespace Swaha_for_Android
 
             SetContentView(Resource.Layout.RecordScreen);
 
-            GridItemLoader gload = new GridItemLoader(this);
+            //GridItemLoader gload = new GridItemLoader(this);
 
             LinearLayout photoTray = FindViewById<LinearLayout>(Resource.Id.phototrayholder);
             //photoTray.LayoutParameters = new LinearLayout.LayoutParams(ViewGroup.MarginLayoutParams.MatchParent, 20);
@@ -48,18 +49,18 @@ namespace Swaha_for_Android
             };
 
             // this mimics the bundle data for testing purposes
-            List<string> bundleData = new List<string>();
-            for (int j = 0; j < 20; j++)
-            {
-                bundleData.Add(gload.gridItems[j].filestring);
-            }
+            bundledList = this.Intent.Extras.GetStringArrayList("story");
+            //for (int j = 0; j < 20; j++)
+            //{
+            //    bundledList.Add(gload.gridItems[j].filestring);
+            //}
             
             // async operation to implement photos to the top view
-            for (int i = 0; i < bundleData.Count; i++)
+            for (int i = 0; i < bundledList.Count; i++)
             {
                 ImageView img = new ImageView(this);
                 photoTray.AddView(img);
-                new SimpleImageScalerTask(img).Execute(bundleData[i]);
+                new SimpleImageScalerTask(img).Execute(bundledList[i]);
             }
             
             Button toPreview = FindViewById<Button>(Resource.Id.stop);

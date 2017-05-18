@@ -20,7 +20,7 @@ namespace Swaha_for_Android
         private GridView theGrid;
         private GridViewAdapter gridAdapter;
 
-        private List<string> list;
+        private IList<string> list;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -54,6 +54,7 @@ namespace Swaha_for_Android
             toRecord.Click += delegate
             {
                 var RecordIntent = new Intent(this, typeof(RecordActivity));
+                RecordIntent.PutExtras(StoryBundle());
                 StartActivity(RecordIntent);
             };
         }
@@ -98,6 +99,19 @@ namespace Swaha_for_Android
                 path = cursor.GetString(columnIndex);
             }
             return path;
+        }
+    
+
+        public Bundle StoryBundle()
+        {
+            Bundle b = new Bundle();
+            //List<string> list = new List<string>();
+            //for (int i = 0; i < list.Count; i++)
+            //{
+            //    list.Add(list[i]);
+            //}
+            b.PutStringArrayList("story", list);
+            return b;
         }
     }
 }

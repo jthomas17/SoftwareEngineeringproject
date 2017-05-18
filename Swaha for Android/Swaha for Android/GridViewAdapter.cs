@@ -13,14 +13,15 @@ using Android.Widget;
 using System.Threading.Tasks;
 using Android.Graphics.Drawables;
 
+// !!!!! THIS USED TO USE A GENERIC LIST, NOW USES ILIST
 namespace Swaha_for_Android
 {
     class GridViewAdapter : BaseAdapter<string>
     {
         Context _context;
-        List<string> _list;
+        IList<string> _list;
 
-        public GridViewAdapter(Context c, List<string> list)
+        public GridViewAdapter(Context c, IList<string> list)
         {
             _context = c;
             _list = list;
