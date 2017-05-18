@@ -32,13 +32,17 @@ namespace Swaha_for_Android
             GridItemLoader gload = new GridItemLoader(this);
 
             LinearLayout photoTray = FindViewById<LinearLayout>(Resource.Id.phototrayholder);
+            //photoTray.LayoutParameters = new LinearLayout.LayoutParams(ViewGroup.MarginLayoutParams.MatchParent, 20);
 
             Button Delete = FindViewById<Button>(Resource.Id.delete);
             Delete.Click += (sender, args) =>
             {
                 var confirm = new AlertDialog.Builder(this);
                 confirm.SetMessage("Are you sure you want to delete this story?");
-                confirm.SetPositiveButton("Yes", (s, e) => { /* do something on OK click */ });
+                confirm.SetPositiveButton("Yes", (s, e) => 
+                {
+                    
+                });
                 confirm.SetNegativeButton("No", (s, e) => { /* do something on Cancel click */ });
                 confirm.Create().Show();
             };
@@ -68,6 +72,7 @@ namespace Swaha_for_Android
                 var PreviewIntent = new Intent(this, typeof(Preview));
                 StartActivity(PreviewIntent);
             };
+
         }
         
     }

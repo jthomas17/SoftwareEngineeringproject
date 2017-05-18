@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
     android:orientation="vertical">
-    <Toolbar
+    <FrameLayout
         android:id="@+id/toolbarMain"
         android:background="#8B0000"
         android:layout_height="75dp"
@@ -23,7 +23,7 @@
             android:textSize="55dp"
             android:textStyle="italic"
             android:typeface="serif" />
-    </Toolbar>
+    </FrameLayout>
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_height="wrap_content"

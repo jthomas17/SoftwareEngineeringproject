@@ -3,27 +3,27 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Toolbar
-        android:id="@+id/toolbarPreview"
+  <FrameLayout
+       android:id="@+id/toolbarPreview"
+       android:background="#202020"
+       android:layout_height="50dp"
+       android:layout_width="match_parent"
+       android:layout_weight="2"
+       android:minWidth="25px"
+       android:minHeight="25px">
+    <TextView
+        android:id="@+id/textViewPreview"
         android:background="#202020"
-        android:layout_height="50dp"
-        android:layout_width="match_parent"
-        android:layout_weight="2"
-        android:minWidth="25px"
-        android:minHeight="25px">
-        <TextView
-            android:id="@+id/textViewSelect"
-            android:background="#202020"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Preview Story"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="40dp"
-            android:textStyle="normal"
-            android:typeface="normal" />
-    </Toolbar>
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Preview Story"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+  </FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="fill_parent"

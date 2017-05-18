@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical">
-    <Toolbar
+    <FrameLayout
         android:id="@+id/toolbarSelect"
         android:background="#202020"
         android:layout_height="50dp"
@@ -24,8 +24,9 @@
             android:textSize="40dp"
             android:textStyle="normal"
             android:typeface="normal" />
-    </Toolbar>
-    <GridView android:id="@+id/SelectPicturesGrid"
+    </FrameLayout>
+    <GridView
+        android:id="@+id/SelectPicturesGrid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:columnWidth="90dp"

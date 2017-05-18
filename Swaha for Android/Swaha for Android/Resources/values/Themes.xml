@@ -5,6 +5,8 @@
     <item name="android:colorPrimary">#ffc50404</item>
     <item name="android:colorButtonNormal">#ffb00f01</item>
     <item name="android:colorBackground">@color/theme_custom_background</item>
+    <item name = "android:windowActionBar">false</item>
+    <item name = "android:windowNoTitle">true</item>
     <item name="android:windowBackground">?android:attr/colorBackground</item>
   </style>
 </resources>
