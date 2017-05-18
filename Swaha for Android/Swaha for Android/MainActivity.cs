@@ -15,6 +15,7 @@ using Uri = Android.Net.Uri;
 
 namespace Swaha_for_Android
 {
+    //Activity that handles the loading screen
     [Activity(Label = "Swaha for Android", MainLauncher = true, Icon = "@drawable/ICONLOGO")]
     public class MainActivity : Activity
     {
@@ -24,15 +25,13 @@ namespace Swaha_for_Android
             ActionBar.Hide();
             SetContentView(Resource.Layout.OpeningPage);
 
+            //Delays the next activity from starting for 4 seconds.
             Handler h = new Handler();
             Action LoadScreen = () =>
              {
                  StartActivity(typeof(CameraActivity));
              };
             h.PostDelayed(LoadScreen,4000);
-
-            // Set our view from the "main" layout resource  
-            // SetContentView (Resource.Layout.Main);
         }
     }
 

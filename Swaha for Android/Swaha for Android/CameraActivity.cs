@@ -27,21 +27,46 @@ namespace Swaha_for_Android
     {
 
         private ImageView _imageView;
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            ActionBar.Hide();
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+
+            //Confirms that the device has camera taking abilities, if so activates camera button
+            if (IsThereAnAppToTakePictures())
+            {
+                CreateDirectoryForPictures();
+
+                Button button = FindViewById<Button>(Resource.Id.myButton);
+                button.Click += TakeAPicture;
+            }
+
+            //Starts Activity to select pictures for recording
+            Button gotoPicSelect = FindViewById<Button>(Resource.Id.GoToPictureSelect);
+            gotoPicSelect.Click += delegate
+            {
+                var SelectPicturesIntent = new Intent(this, typeof(SelectPicturesActivity));
+                StartActivity(SelectPicturesIntent);
+            };
+
+        }
+
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
 
             // Make it available in the gallery
-
             Intent mediaScanIntent = new Intent(Intent.ActionMediaScannerScanFile);
             Uri contentUri = Uri.FromFile(App._file);
             mediaScanIntent.SetData(contentUri);
             SendBroadcast(mediaScanIntent);
 
-            // Display in ImageView. We will resize the bitmap to fit the display.
+            // Display in ImageView. Resizes the bitmap to fit the display.
             // Loading the full sized image will consume to much memory
             // and cause the application to crash.
-
             int height = Resources.DisplayMetrics.HeightPixels;
             int width = _imageView.Height;
             App.bitmap = App._file.Path.LoadAndResizeBitmap(width, height);
@@ -54,6 +79,8 @@ namespace Swaha_for_Android
             // Dispose of the Java side bitmap.
             GC.Collect();
         }
+
+        //Sets up android camera intent
         private void TakeAPicture(object sender, EventArgs eventArgs)
         {
             Intent intent = new Intent(MediaStore.ActionImageCapture);
@@ -62,6 +89,7 @@ namespace Swaha_for_Android
             StartActivityForResult(intent, 0);
         }
 
+        //creates a directory for pictures taken in the app
         private void CreateDirectoryForPictures()
         {
             App._dir = new File(
@@ -73,6 +101,7 @@ namespace Swaha_for_Android
             }
         }
 
+        // checks to see if there is camera capabilities on the device
         private bool IsThereAnAppToTakePictures()
         {
             Intent intent = new Intent(MediaStore.ActionImageCapture);
@@ -81,35 +110,6 @@ namespace Swaha_for_Android
             return availableActivities != null && availableActivities.Count > 0;
         }
 
-        protected override void OnCreate(Bundle bundle)
-        {
-            base.OnCreate(bundle);
-
-            ActionBar.Hide();
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
-
-            if (IsThereAnAppToTakePictures())
-            {
-                CreateDirectoryForPictures();
-
-                Button button = FindViewById<Button>(Resource.Id.myButton);
-                //_imageView = FindViewById<ImageView>(Resource.Id.imageView1);
-                button.Click += TakeAPicture;
-            }
-            Button gotoPicSelect = FindViewById<Button>(Resource.Id.GoToPictureSelect);
-            gotoPicSelect.Click += delegate
-            {
-                var SelectPicturesIntent = new Intent(this, typeof(SelectPicturesActivity));
-                StartActivity(SelectPicturesIntent);
-            };
-
-            //Button video = FindViewById<Button>(Resource.Id.video);
-            //video.Click += delegate
-            //{
-              //  var videoness = new Intent(this, typeof(RecordActivity));
-               // StartActivity(videoness);
-            //};
-        }
+      
     }
 }

@@ -30,6 +30,7 @@ namespace Swaha_for_Android
             string path = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/testing.mp4";
             var uri = Android.Net.Uri.Parse(path);
 
+            //plays story that was just created
             play.Click += delegate
             {
                 play.Visibility = Android.Views.ViewStates.Invisible;
@@ -42,7 +43,8 @@ namespace Swaha_for_Android
             {
 
             };
-
+            
+            //enables user to send story via android email intent
             mail.Click += delegate
             {
                 var email = new Intent(Intent.ActionSend);
