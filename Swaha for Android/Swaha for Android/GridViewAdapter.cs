@@ -19,15 +19,6 @@ namespace Swaha_for_Android
     {
         Context _context;
         List<string> _list;
-        //Activity _activity;
-        //GridItemLoader _gridItemLoader;
-        /*
-        public GridViewAdapter(Context context, GridItemLoader gridItemLoader)
-        {
-            _context = context;
-            _gridItemLoader = gridItemLoader;
-        }
-        */
 
         public GridViewAdapter(Context c, List<string> list)
         {
@@ -70,10 +61,7 @@ namespace Swaha_for_Android
                 holder.Thumbnail = imgThumbnail;
                 itemView.Tag = holder;
             }
-            //holder.Thumbnail.SetImageResource(Resource.Drawable.Icon);
-            /* TODO: async function that scales the images from the filepath goes here 
-                if (holder.imageView != null){new ImageScalerTask(imagefilepath)}
-            */
+            
             holder.Position = position;
             new ImageScalerTask(holder, position).Execute(_list[position]);
     

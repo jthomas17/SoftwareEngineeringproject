@@ -68,13 +68,14 @@ namespace Swaha_for_Android
             }
         }
 
-
+        // Adds path to the collection and updates gridview adapter
         private void AddUriToList(Android.Net.Uri uri)
         {
             list.Add(GetPathToImage(uri));
             gridAdapter.NotifyDataSetChanged();
         }
 
+        // Does the nitty gritty in retrieving string filepath from URI
         private string GetPathToImage(Android.Net.Uri uri)
         {
             string doc_id = "";

@@ -61,8 +61,6 @@ namespace Swaha_for_Android
                 photoTray.AddView(img);
                 new SimpleImageScalerTask(img).Execute(bundleData[i]);
             }
-
-            //ArrayAdapter adapter = new ArrayAdapter(this, Resource.Layout.PicSelectGridViewChildLayout, data);
             
             Button toPreview = FindViewById<Button>(Resource.Id.stop);
             toPreview.Click += delegate
