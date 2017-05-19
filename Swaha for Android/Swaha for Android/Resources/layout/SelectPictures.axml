@@ -63,6 +63,7 @@
             android:textAllCaps="false"
             android:textSize="25dp"
             android:id="@+id/toRecord"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:enabled="false"/>
     </LinearLayout>
 </RelativeLayout>

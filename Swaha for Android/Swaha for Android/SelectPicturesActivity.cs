@@ -20,6 +20,8 @@ namespace Swaha_for_Android
         private GridView theGrid;
         private GridViewAdapter gridAdapter;
 
+        private const int MAX_IMAGES = 10;
+
         private IList<string> list;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -41,6 +43,9 @@ namespace Swaha_for_Android
             gridAdapter = new GridViewAdapter(this, list);
             theGrid.Adapter = gridAdapter;
 
+            if (list.Count == MAX_IMAGES)
+                toCamRoll.Enabled = false;
+
             // Add photo delegate
             toCamRoll.Click += delegate
             {
@@ -49,6 +54,7 @@ namespace Swaha_for_Android
                 imageIntent.SetAction(Intent.ActionGetContent);
                 StartActivityForResult(
                     Intent.CreateChooser(imageIntent, "Select photo"), 0);
+                toRecord.Enabled = true;
             };
 
             // Continue to RecordActivity delegate

@@ -22,8 +22,12 @@ namespace Swaha_for_Android
     [Activity(Label = "RecordActivity")]
     public class RecordActivity : Activity/*, View.IOnTouchListener*/
     {
+        // Holds the selected pictures by the user
         IList<string> bundledList;
+
+        // Holds a collection of imageview references for assigning delegates
         List<ImageView> storyImageList;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -55,6 +59,7 @@ namespace Swaha_for_Android
             bundledList = this.Intent.Extras.GetStringArrayList("story");
 
             // async operation to implement photos to the top view
+            // also adds views to the storyImageList for delegates
             for (int i = 0; i < bundledList.Count; i++)
             {
                 ImageView img = new ImageView(this);
@@ -62,7 +67,18 @@ namespace Swaha_for_Android
                 photoTray.AddView(img);
                 storyImageList.Add(img);
                 new SimpleImageScalerTask(img).Execute(bundledList[i]);
+               
                 //img.SetOnTouchListener(this);
+            }
+
+            // fills the rest of the storyImageList with dummy imageviews
+             if ( bundledList.Count < 10)
+            {
+                for (int i = bundledList.Count; i < 10; i++)
+                {
+                    ImageView img = new ImageView(this);
+                    storyImageList.Add(img);
+                }
             }
 
             //for (int j = 0; j < storyImageList.Count; j++)
@@ -72,6 +88,10 @@ namespace Swaha_for_Android
             //    };
             //}
             
+            // Yes, it's horrible code, but we couldn't figure out how to 
+            // assign delegates programatically. So here's a shitton of 
+            // delegates, each referencing an imageview that may or may not
+            // be showing.
             storyImageList[0].Click += delegate
             {
                 storyImage.SetImageURI(Uri.Parse(bundledList[0]));
@@ -84,7 +104,7 @@ namespace Swaha_for_Android
             {
                 storyImage.SetImageURI(Uri.Parse(bundledList[2]));
             };
-            /*
+            
             storyImageList[3].Click += delegate
             {
                 storyImage.SetImageURI(Uri.Parse(bundledList[3]));
@@ -112,19 +132,20 @@ namespace Swaha_for_Android
                 storyImageList[9].Click += delegate
                 {
                     storyImage.SetImageURI(Uri.Parse(bundledList[9]));
-                };*/
+                };
 
-                    Button toPreview = FindViewById<Button>(Resource.Id.stop);
+            // go to next activity, Preview video
+            Button toPreview = FindViewById<Button>(Resource.Id.stop);
             toPreview.Click += delegate
             {
                 // Add an activity that is for previewing video
                 // currently loops back to main
 
                 // TODO SEND TO SERVER
-                System.Net.WebClient Client = new System.Net.WebClient();
-                Client.Headers.Add("Content-Type", "binary/octet-stream");
-                byte[] result = Client.UploadFile("http://cs1.whitworth.edu/swaha/fileUpload.php", "POST", bundledList[0]);
-                string s = System.Text.Encoding.UTF8.GetString(result, 0, result.Length);
+                //System.Net.WebClient Client = new System.Net.WebClient();
+                //Client.Headers.Add("Content-Type", "binary/octet-stream");
+                //byte[] result = Client.UploadFile("http://cs1.whitworth.edu/swaha/fileUpload.php", "POST", bundledList[0]);
+                //string s = System.Text.Encoding.UTF8.GetString(result, 0, result.Length);
 
                 var PreviewIntent = new Intent(this, typeof(Preview));
                 StartActivity(PreviewIntent);

@@ -27,7 +27,7 @@ namespace Swaha_for_Android
             var mail = FindViewById<Button>(Resource.Id.toEmail);
             var save = FindViewById<Button>(Resource.Id.toPhone);
             
-            string path = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/testing.mp4";
+            string path = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/Titletest.mp4";
             var uri = Android.Net.Uri.Parse(path);
 
             //plays story that was just created

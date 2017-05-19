@@ -25,8 +25,7 @@ namespace Swaha_for_Android
     [Activity(Label = "CameraActivity")]
     public class CameraActivity : Activity
     {
-
-        private ImageView _imageView;
+        
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -52,6 +51,7 @@ namespace Swaha_for_Android
                 StartActivity(SelectPicturesIntent);
             };
 
+            // Generally awful code, but with more time, will make better
             var play1 = FindViewById<ImageButton>(Resource.Id.previewButton1);
             var video1 = FindViewById<VideoView>(Resource.Id.PreviewVid1);
             var play2 = FindViewById<ImageButton>(Resource.Id.previewButton2);
@@ -63,37 +63,42 @@ namespace Swaha_for_Android
             var play5 = FindViewById<ImageButton>(Resource.Id.previewButton5);
             var video5 = FindViewById<VideoView>(Resource.Id.PreviewVid5);
 
-            string path1 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/testing.mp4";
+            string path1 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/7 magic mountains.mp4";
             var uri1 = Android.Net.Uri.Parse(path1);
+            video1.SetVideoURI(uri1);
 
-            string path2 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/testing.mp4";
+            string path2 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/Why whitworth.mp4";
             var uri2 = Android.Net.Uri.Parse(path2);
+            video2.SetVideoURI(uri2);
 
-            string path3 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/testing.mp4";
+            string path3 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/Hibachi grill.mp4";
             var uri3 = Android.Net.Uri.Parse(path3);
+            video3.SetVideoURI(uri3);
 
             string path4 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/testing.mp4";
             var uri4 = Android.Net.Uri.Parse(path4);
+            
 
             string path5 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/testing.mp4";
             var uri5 = Android.Net.Uri.Parse(path5);
-
+            
+            
             play1.Click += delegate
             {
                 play1.Visibility = Android.Views.ViewStates.Invisible;
-                video1.SetVideoURI(uri1);
+
                 video1.Start();
             };
             play2.Click += delegate
             {
                 play2.Visibility = Android.Views.ViewStates.Invisible;
-                video2.SetVideoURI(uri2);
+                
                 video2.Start();
             };
             play3.Click += delegate
             {
                 play3.Visibility = Android.Views.ViewStates.Invisible;
-                video3.SetVideoURI(uri3);
+                
                 video3.Start();
             };
             play4.Click += delegate
@@ -109,6 +114,17 @@ namespace Swaha_for_Android
                 video5.Start();
             };
 
+            // why does this not work - TODO
+            video1.Click += delegate
+            {
+                if (video1.IsPlaying)
+                {
+                    video1.Pause();
+                }
+                else
+                    video1.Resume();
+            };
+
         }
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
@@ -120,21 +136,6 @@ namespace Swaha_for_Android
             Uri contentUri = Uri.FromFile(App._file);
             mediaScanIntent.SetData(contentUri);
             SendBroadcast(mediaScanIntent);
-
-            // Display in ImageView. Resizes the bitmap to fit the display.
-            // Loading the full sized image will consume to much memory
-            // and cause the application to crash.
-            int height = Resources.DisplayMetrics.HeightPixels;
-            int width = _imageView.Height;
-            App.bitmap = App._file.Path.LoadAndResizeBitmap(width, height);
-            if (App.bitmap != null)
-            {
-                _imageView.SetImageBitmap(App.bitmap);
-                App.bitmap = null;
-            }
-
-            // Dispose of the Java side bitmap.
-            GC.Collect();
         }
 
         //Sets up android camera intent

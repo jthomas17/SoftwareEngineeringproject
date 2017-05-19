@@ -293,3 +293,4 @@ C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\transparentplay.png
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\playbutton.jpg
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll.mdb
+C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.dll.mdb
