@@ -25,6 +25,10 @@ public final class R {
         public static final int GoToPictureSelect=0x7f070006;
         public static final int PreviewVid=0x7f07000b;
         public static final int SelectPicturesGrid=0x7f070018;
+<<<<<<< HEAD
+=======
+        public static final int StoryPicture=0x7f070012;
+>>>>>>> e8bd625d1e8aa47a45379b5534c25181839b12ce
         public static final int Title=0x7f070009;
         public static final int camRoll=0x7f070019;
         public static final int delete=0x7f070013;
@@ -36,7 +40,10 @@ public final class R {
         public static final int scrollView1=0x7f070003;
         public static final int start=0x7f070014;
         public static final int stop=0x7f070015;
+<<<<<<< HEAD
         public static final int surfaceView1=0x7f070012;
+=======
+>>>>>>> e8bd625d1e8aa47a45379b5534c25181839b12ce
         public static final int textViewMain=0x7f070002;
         public static final int textViewPreview=0x7f070008;
         public static final int textViewRecord=0x7f07000f;

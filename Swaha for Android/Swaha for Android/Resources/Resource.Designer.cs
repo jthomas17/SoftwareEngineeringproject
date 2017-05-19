@@ -96,6 +96,7 @@ namespace Swaha_for_Android
 			
 			// aapt resource value: 0x7f07000b
 			public const int PreviewVid = 2131165195;
+<<<<<<< HEAD
 			
 			// aapt resource value: 0x7f070018
 			public const int SelectPicturesGrid = 2131165208;
@@ -106,6 +107,21 @@ namespace Swaha_for_Android
 			// aapt resource value: 0x7f070019
 			public const int camRoll = 2131165209;
 			
+=======
+			
+			// aapt resource value: 0x7f070018
+			public const int SelectPicturesGrid = 2131165208;
+			
+			// aapt resource value: 0x7f070012
+			public const int StoryPicture = 2131165202;
+			
+			// aapt resource value: 0x7f070009
+			public const int Title = 2131165193;
+			
+			// aapt resource value: 0x7f070019
+			public const int camRoll = 2131165209;
+			
+>>>>>>> e8bd625d1e8aa47a45379b5534c25181839b12ce
 			// aapt resource value: 0x7f070013
 			public const int delete = 2131165203;
 			
@@ -132,9 +148,12 @@ namespace Swaha_for_Android
 			
 			// aapt resource value: 0x7f070015
 			public const int stop = 2131165205;
+<<<<<<< HEAD
 			
 			// aapt resource value: 0x7f070012
 			public const int surfaceView1 = 2131165202;
+=======
+>>>>>>> e8bd625d1e8aa47a45379b5534c25181839b12ce
 			
 			// aapt resource value: 0x7f070002
 			public const int textViewMain = 2131165186;
