@@ -49,7 +49,6 @@ C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringprojec
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.pdb
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\bin\Swaha_for_Android.Swaha_for_Android.apk
-C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\picselect.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\main.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\values\strings.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\icon.png
@@ -83,7 +82,6 @@ C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringprojec
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
-C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\cameraroll.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\values\themes.xml
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.pdb
@@ -245,7 +243,6 @@ C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debu
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Take2\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
-C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\record.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\openingpage.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\preview.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\recordscreen.xml
@@ -295,7 +292,8 @@ C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringprojec
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\gridtile.xml
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\transparentplay.png
 C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\playbutton.jpg
-C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll.mdb
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\layout\gridtile.xml
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\transparentplay.png
 C:\Users\Ian\Documents\GitHub\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\res\drawable\playbutton.jpg
+C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\obj\Debug\Swaha for Android.dll.mdb
+C:\Users\Justin\Documents\Classes\Software Engineering\SoftwareEngineeringproject\SoftwareEngineeringproject\Swaha for Android\Swaha for Android\bin\Debug\Swaha for Android.dll.mdb
