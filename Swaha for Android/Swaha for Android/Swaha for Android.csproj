@@ -64,11 +64,14 @@
     <Compile Include="CameraActivity.cs" />
     <Compile Include="GridItemLoader.cs" />
     <Compile Include="GridViewAdapter.cs" />
+    <Compile Include="ImageScalerTask.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="PicSelectAvtivity.cs" />
+    <Compile Include="SelectPicturesActivity.cs" />
+    <Compile Include="Preview.cs" />
     <Compile Include="RecordActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleImageScalerTask.cs" />
     <Compile Include="UserImage.cs" />
     <Compile Include="Video.cs" />
   </ItemGroup>
@@ -76,19 +79,19 @@
     <None Include="GettingStarted.Xamarin" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\PicSelect.axml">
+    <AndroidResource Include="Resources\layout\GridTile.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\CameraRoll.axml">
+    <AndroidResource Include="Resources\layout\OpeningPage.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\PicSelectGridViewChildLayout.axml">
+    <AndroidResource Include="Resources\layout\Preview.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\Record.axml">
+    <AndroidResource Include="Resources\layout\RecordScreen.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\videofragment.axml">
+    <AndroidResource Include="Resources\layout\SelectPictures.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -113,6 +116,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ICONLOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\TransparentPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\PlayButton.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

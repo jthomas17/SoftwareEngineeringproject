@@ -25,35 +25,120 @@ namespace Swaha_for_Android
     [Activity(Label = "CameraActivity")]
     public class CameraActivity : Activity
     {
+        
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
 
-        private ImageView _imageView;
+            ActionBar.Hide();
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+
+            //Confirms that the device has camera taking abilities, if so activates camera button
+            if (IsThereAnAppToTakePictures())
+            {
+                CreateDirectoryForPictures();
+
+                Button button = FindViewById<Button>(Resource.Id.myButton);
+                button.Click += TakeAPicture;
+            }
+
+            //Starts Activity to select pictures for recording
+            Button gotoPicSelect = FindViewById<Button>(Resource.Id.GoToPictureSelect);
+            gotoPicSelect.Click += delegate
+            {
+                var SelectPicturesIntent = new Intent(this, typeof(SelectPicturesActivity));
+                StartActivity(SelectPicturesIntent);
+            };
+
+            // Generally awful code, but with more time, will make better
+            var play1 = FindViewById<ImageButton>(Resource.Id.previewButton1);
+            var video1 = FindViewById<VideoView>(Resource.Id.PreviewVid1);
+            var play2 = FindViewById<ImageButton>(Resource.Id.previewButton2);
+            var video2 = FindViewById<VideoView>(Resource.Id.PreviewVid2);
+            var play3 = FindViewById<ImageButton>(Resource.Id.previewButton3);
+            var video3 = FindViewById<VideoView>(Resource.Id.PreviewVid3);
+            var play4 = FindViewById<ImageButton>(Resource.Id.previewButton4);
+            var video4 = FindViewById<VideoView>(Resource.Id.PreviewVid4);
+            var play5 = FindViewById<ImageButton>(Resource.Id.previewButton5);
+            var video5 = FindViewById<VideoView>(Resource.Id.PreviewVid5);
+
+            string path1 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/7 magic mountains.mp4";
+            var uri1 = Android.Net.Uri.Parse(path1);
+            video1.SetVideoURI(uri1);
+
+            string path2 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/Why whitworth.mp4";
+            var uri2 = Android.Net.Uri.Parse(path2);
+            video2.SetVideoURI(uri2);
+
+            string path3 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/Hibachi grill.mp4";
+            var uri3 = Android.Net.Uri.Parse(path3);
+            video3.SetVideoURI(uri3);
+
+            string path4 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/testing.mp4";
+            var uri4 = Android.Net.Uri.Parse(path4);
+            
+
+            string path5 = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DCIM/Camera/testing.mp4";
+            var uri5 = Android.Net.Uri.Parse(path5);
+            
+            
+            play1.Click += delegate
+            {
+                play1.Visibility = Android.Views.ViewStates.Invisible;
+
+                video1.Start();
+            };
+            play2.Click += delegate
+            {
+                play2.Visibility = Android.Views.ViewStates.Invisible;
+                
+                video2.Start();
+            };
+            play3.Click += delegate
+            {
+                play3.Visibility = Android.Views.ViewStates.Invisible;
+                
+                video3.Start();
+            };
+            play4.Click += delegate
+            {
+                play4.Visibility = Android.Views.ViewStates.Invisible;
+                video4.SetVideoURI(uri4);
+                video4.Start();
+            };
+            play5.Click += delegate
+            {
+                play5.Visibility = Android.Views.ViewStates.Invisible;
+                video5.SetVideoURI(uri5);
+                video5.Start();
+            };
+
+            // why does this not work - TODO
+            video1.Click += delegate
+            {
+                if (video1.IsPlaying)
+                {
+                    video1.Pause();
+                }
+                else
+                    video1.Resume();
+            };
+
+        }
+
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
 
             // Make it available in the gallery
-
             Intent mediaScanIntent = new Intent(Intent.ActionMediaScannerScanFile);
             Uri contentUri = Uri.FromFile(App._file);
             mediaScanIntent.SetData(contentUri);
             SendBroadcast(mediaScanIntent);
-
-            // Display in ImageView. We will resize the bitmap to fit the display.
-            // Loading the full sized image will consume to much memory
-            // and cause the application to crash.
-
-            int height = Resources.DisplayMetrics.HeightPixels;
-            int width = _imageView.Height;
-            App.bitmap = App._file.Path.LoadAndResizeBitmap(width, height);
-            if (App.bitmap != null)
-            {
-                _imageView.SetImageBitmap(App.bitmap);
-                App.bitmap = null;
-            }
-
-            // Dispose of the Java side bitmap.
-            GC.Collect();
         }
+
+        //Sets up android camera intent
         private void TakeAPicture(object sender, EventArgs eventArgs)
         {
             Intent intent = new Intent(MediaStore.ActionImageCapture);
@@ -62,6 +147,7 @@ namespace Swaha_for_Android
             StartActivityForResult(intent, 0);
         }
 
+        //creates a directory for pictures taken in the app
         private void CreateDirectoryForPictures()
         {
             App._dir = new File(
@@ -73,6 +159,7 @@ namespace Swaha_for_Android
             }
         }
 
+        // checks to see if there is camera capabilities on the device
         private bool IsThereAnAppToTakePictures()
         {
             Intent intent = new Intent(MediaStore.ActionImageCapture);
@@ -81,33 +168,6 @@ namespace Swaha_for_Android
             return availableActivities != null && availableActivities.Count > 0;
         }
 
-        protected override void OnCreate(Bundle bundle)
-        {
-            base.OnCreate(bundle);
-
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
-
-            if (IsThereAnAppToTakePictures())
-            {
-                CreateDirectoryForPictures();
-
-                Button button = FindViewById<Button>(Resource.Id.myButton);
-                _imageView = FindViewById<ImageView>(Resource.Id.imageView1);
-                button.Click += TakeAPicture;
-            }
-            Button gotoPicSelect = FindViewById<Button>(Resource.Id.GoToPictureSelect);
-            gotoPicSelect.Click += delegate
-            {
-                var PicSelectIntent = new Intent(this, typeof(PicSelectAvtivity));
-                StartActivity(PicSelectIntent);
-            };
-            Button video = FindViewById<Button>(Resource.Id.video);
-            video.Click += delegate
-            {
-                var videoness = new Intent(this, typeof(RecordActivity));
-                StartActivity(videoness);
-            };
-        }
+      
     }
 }

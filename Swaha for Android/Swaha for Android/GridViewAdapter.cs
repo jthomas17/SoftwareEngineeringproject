@@ -13,76 +13,27 @@ using Android.Widget;
 using System.Threading.Tasks;
 using Android.Graphics.Drawables;
 
+// !!!!! THIS USED TO USE A GENERIC LIST, NOW USES ILIST
 namespace Swaha_for_Android
 {
-    class GridViewAdapter : BaseAdapter<UserImage>
+    class GridViewAdapter : BaseAdapter<string>
     {
         Context _context;
-        Activity _activity;
-        GridItemLoader _gridItemLoader;
+        IList<string> _list;
 
-        /*
-        public GridViewAdapter(Activity activity, GridItemLoader gridItemLoader)
+        public GridViewAdapter(Context c, IList<string> list)
         {
-            _activity = activity;
-            _gridItemLoader = gridItemLoader;
+            _context = c;
+            _list = list;
         }
-        */
-        public GridViewAdapter(Context context, GridItemLoader gridItemLoader)
-        {
-            _context = context;
-            _gridItemLoader = gridItemLoader;
-        }
-
-        /*
-        void fillImages()
-        {
-            // Button galleryButton = FindViewById<Button>(Resource.Id.GalleryButton);
-            var imageUri = MediaStore.Images.Media.ExternalContentUri;
-            
-            string[] projection = { MediaStore.Images.Media.InterfaceConsts.Data,
-                                    MediaStore.Images.Media.InterfaceConsts.Id,
-                                    MediaStore.Images.Thumbnails.Data};
-
-            var loader = new CursorLoader(_activity, MediaStore.Images.Media.ExternalContentUri, projection, null, null, null);
-            var cursor = (ICursor)loader.LoadInBackground();
-            int[] columnIndex = { cursor.GetColumnIndex(projection[0]), cursor.GetColumnIndex(projection[1]), cursor.GetColumnIndex(projection[2])};
-
-            imageList = new List<UserImage>();
-            
-            if (cursor.MoveToFirst())
-            {
-                do
-                {
-                    if (cursor.IsLast)
-                    {
-                        break;
-                    }
-                    //Android.Net.Uri pictureUri = ContentUris.WithAppendedId(MediaStore.Images.Media.ExternalContentUri, cursor.GetLong(columnIndex[0]));
-
-                    string pictureUriString = cursor.GetString(columnIndex[0]);
-                    int pictureID = cursor.GetInt(columnIndex[1]);
-                    string thumbnailString = cursor.GetString(columnIndex[2]);
-                    Android.Net.Uri pictureUri = Android.Net.Uri.Parse(pictureUriString);
-                    Android.Net.Uri thumbUri = Android.Net.Uri.Parse(thumbnailString);
-
-                    imageList.Add(new UserImage(pictureUri, pictureID, pictureUriString, thumbUri, thumbnailString));
-                    
-                } while (cursor.MoveToNext());
-            }
-        }
-        */
-
         public override int Count
         {
-            get { return _gridItemLoader.gridItems.Count; }
+            get { return _list.Count; }
         }
-
-        public override UserImage this[int position]
+        public override string this[int position]
         {
-            get { return _gridItemLoader.gridItems[position]; }
+            get {return _list[position]; }
         }
-
         public override long GetItemId(int position)
         {
             return position;
@@ -90,24 +41,39 @@ namespace Swaha_for_Android
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            var view = convertView ?? LayoutInflater.From(_context).Inflate(Resource.Layout.PicSelectGridViewChildLayout, parent, false);
-            var image = view.FindViewById<ImageView>(Resource.Id.gridImage);
+            View itemView = convertView;
+            ViewHolder holder;
 
+            if (itemView != null)
+            {
+                holder = (ViewHolder)itemView.Tag;
+
+            }
+            else   /* If convertView is null */
+            {
+                holder = new ViewHolder();
+
+                itemView = LayoutInflater.From(_context).Inflate(Resource.Layout.GridTile, parent, false);
+
+                // need to set the scale type before assinging it to the viewholder
+                ImageView imgThumbnail = itemView.FindViewById<ImageView>(Resource.Id.gridImage);
+                imgThumbnail.SetScaleType(ImageView.ScaleType.CenterCrop);
+                imgThumbnail.Rotation = 90;
+                holder.Thumbnail = imgThumbnail;
+                itemView.Tag = holder;
+            }
             
+            holder.Position = position;
+            new ImageScalerTask(holder, position).Execute(_list[position]);
+    
 
-            //image.SetScaleType(ImageView.ScaleType.CenterCrop);
-
-            //image.SetImageURI(imageList[position].uri);
-
-            //BitmapFactory.Options options = await GetBitmapOptionsOfImageAsync(_gridItemLoader.gridItems[position].filestring);
-            BitmapFactory.Options options = new BitmapFactory.Options();
-            options.InSampleSize = 8;
-            Bitmap bitmap = BitmapFactory.DecodeFile(_gridItemLoader.gridItems[position].filestring, options);
-            //image.SetImageURI(_gridItemLoader.gridItems[position].thumburi);
-            image.SetImageBitmap(bitmap);
-            //bitmap.Recycle();
-            return view;
+            return itemView;
         }
-        
+
+        public class ViewHolder : Java.Lang.Object
+        {
+            public ImageView Thumbnail { get; set; }
+            public int Position { get; set; }
+        }
     }
 }
