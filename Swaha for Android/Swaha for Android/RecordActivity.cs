@@ -36,7 +36,8 @@ namespace Swaha_for_Android
             LinearLayout photoTray = FindViewById<LinearLayout>(Resource.Id.phototrayholder);
             //photoTray.LayoutParameters = new LinearLayout.LayoutParams(ViewGroup.MarginLayoutParams.MatchParent, 20);
             var storyImage = FindViewById<ImageView>(Resource.Id.StoryPicture);
-            
+            storyImage.Rotation = 90;
+
             Button Delete = FindViewById<Button>(Resource.Id.delete);
             Delete.Click += (sender, args) =>
             {
@@ -57,6 +58,7 @@ namespace Swaha_for_Android
             for (int i = 0; i < bundledList.Count; i++)
             {
                 ImageView img = new ImageView(this);
+                img.Rotation = 90;
                 photoTray.AddView(img);
                 storyImageList.Add(img);
                 new SimpleImageScalerTask(img).Execute(bundledList[i]);
@@ -82,44 +84,48 @@ namespace Swaha_for_Android
             {
                 storyImage.SetImageURI(Uri.Parse(bundledList[2]));
             };
-            //storyImageList[3].Click += delegate
-            //{
-            //    storyImage.SetImageURI(Uri.Parse(bundledList[3]));
-            //};
-            //storyImageList[4].Click += delegate
-            //{
-            //    storyImage.SetImageURI(Uri.Parse(bundledList[4]));
-            //};
-            //storyImageList[5].Click += delegate
-            //{
-            //    storyImage.SetImageBitmap(BitmapFactory.DecodeFile(bundledList[5]));
-            //};
-            //storyImageList[6].Click += delegate
-            //{
-            //    storyImage.SetImageBitmap(BitmapFactory.DecodeFile(bundledList[6]));
-            //};
-            //storyImageList[7].Click += delegate
-            //{
-            //    storyImage.SetImageBitmap(BitmapFactory.DecodeFile(bundledList[7]));
-            //};
-            //storyImageList[8].Click += delegate
-            //{
-            //    storyImage.SetImageBitmap(BitmapFactory.DecodeFile(bundledList[8]));
-            //};
-            //storyImageList[9].Click += delegate
-            //{
-            //    storyImage.SetImageBitmap(BitmapFactory.DecodeFile(bundledList[9]));
-            //};
-            //storyImageList[10].Click += delegate
-            //{
-            //    storyImage.SetImageBitmap(BitmapFactory.DecodeFile(bundledList[10]));
-            //};
+            /*
+            storyImageList[3].Click += delegate
+            {
+                storyImage.SetImageURI(Uri.Parse(bundledList[3]));
+            };
+            storyImageList[4].Click += delegate
+            {
+                storyImage.SetImageURI(Uri.Parse(bundledList[4]));
+            };
+                storyImageList[5].Click += delegate
+                {
+                    storyImage.SetImageURI(Uri.Parse(bundledList[5]));
+                };
+                storyImageList[6].Click += delegate
+                {
+                    storyImage.SetImageURI(Uri.Parse(bundledList[6]));
+                };
+                storyImageList[7].Click += delegate
+                {
+                    storyImage.SetImageURI(Uri.Parse(bundledList[7]));
+                };
+                storyImageList[8].Click += delegate
+                {
+                    storyImage.SetImageURI(Uri.Parse(bundledList[8]));
+                };
+                storyImageList[9].Click += delegate
+                {
+                    storyImage.SetImageURI(Uri.Parse(bundledList[9]));
+                };*/
 
-            Button toPreview = FindViewById<Button>(Resource.Id.stop);
+                    Button toPreview = FindViewById<Button>(Resource.Id.stop);
             toPreview.Click += delegate
             {
                 // Add an activity that is for previewing video
                 // currently loops back to main
+
+                // TODO SEND TO SERVER
+                System.Net.WebClient Client = new System.Net.WebClient();
+                Client.Headers.Add("Content-Type", "binary/octet-stream");
+                byte[] result = Client.UploadFile("http://cs1.whitworth.edu/swaha/fileUpload.php", "POST", bundledList[0]);
+                string s = System.Text.Encoding.UTF8.GetString(result, 0, result.Length);
+
                 var PreviewIntent = new Intent(this, typeof(Preview));
                 StartActivity(PreviewIntent);
             };

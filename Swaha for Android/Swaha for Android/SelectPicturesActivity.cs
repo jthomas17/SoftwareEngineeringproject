@@ -34,6 +34,7 @@ namespace Swaha_for_Android
             Button toRecord = FindViewById<Button>(Resource.Id.toRecord);
             Button toCamRoll = FindViewById<Button>(Resource.Id.camRoll);
             theGrid = FindViewById<GridView>(Resource.Id.SelectPicturesGrid);
+            
 
             // Get grid collection ready
             list = new List<string>();

@@ -58,7 +58,7 @@ namespace Swaha_for_Android
                 // need to set the scale type before assinging it to the viewholder
                 ImageView imgThumbnail = itemView.FindViewById<ImageView>(Resource.Id.gridImage);
                 imgThumbnail.SetScaleType(ImageView.ScaleType.CenterCrop);
-
+                imgThumbnail.Rotation = 90;
                 holder.Thumbnail = imgThumbnail;
                 itemView.Tag = holder;
             }
