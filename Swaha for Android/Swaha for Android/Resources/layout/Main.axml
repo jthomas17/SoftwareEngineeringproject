@@ -36,46 +36,91 @@
             android:layout_width="fill_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content">
-            <ImageButton xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/previewButton"
+            <FrameLayout
                 android:layout_width="fill_parent"
-                android:layout_height="280dp"
-                android:layout_gravity="center"
-                android:src="@drawable/PlayButton"
-                tools:visibility="visible"
-                android:visibility="visible" />
-            <ImageButton xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/previewButton"
+                android:layout_height="300dp">
+                <VideoView
+                    android:id="@+id/PreviewVid1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center" />
+                <ImageButton xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/previewButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/PlayButton"
+                    tools:visibility="visible"
+                    android:visibility="visible" />
+            </FrameLayout>
+            <FrameLayout
                 android:layout_width="fill_parent"
-                android:layout_height="280dp"
-                android:layout_gravity="center"
-                android:src="@drawable/PlayButton"
-                tools:visibility="visible"
-                android:visibility="visible" />
-            <ImageButton xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/previewButton"
+                android:layout_height="300dp">
+                <VideoView
+                    android:id="@+id/PreviewVid2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center" />
+                <ImageButton xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/previewButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/PlayButton"
+                    tools:visibility="visible"
+                    android:visibility="visible" />
+            </FrameLayout>
+            <FrameLayout
                 android:layout_width="fill_parent"
-                android:layout_height="280dp"
-                android:layout_gravity="center"
-                android:src="@drawable/PlayButton"
-                tools:visibility="visible"
-                android:visibility="visible" />
-            <ImageButton xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/previewButton"
+                android:layout_height="300dp">
+                <VideoView
+                    android:id="@+id/PreviewVid3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center" />
+                <ImageButton xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/previewButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/PlayButton"
+                    tools:visibility="visible"
+                    android:visibility="visible" />
+            </FrameLayout>
+            <FrameLayout
                 android:layout_width="fill_parent"
-                android:layout_height="280dp"
-                android:layout_gravity="center"
-                android:src="@drawable/PlayButton"
-                tools:visibility="visible"
-                android:visibility="visible" />
-            <ImageButton xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/previewButton"
+                android:layout_height="300dp">
+                <VideoView
+                    android:id="@+id/PreviewVid4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center" />
+                <ImageButton xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/previewButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/PlayButton"
+                    tools:visibility="visible"
+                    android:visibility="visible" />
+            </FrameLayout>
+            <FrameLayout
                 android:layout_width="fill_parent"
-                android:layout_height="280dp"
-                android:layout_gravity="center"
-                android:src="@drawable/PlayButton"
-                tools:visibility="visible"
-                android:visibility="visible" />
+                android:layout_height="300dp">
+                <VideoView
+                    android:id="@+id/PreviewVid5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center" />
+                <ImageButton xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/previewButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/PlayButton"
+                    tools:visibility="visible"
+                    android:visibility="visible" />
+            </FrameLayout>
         </LinearLayout>
     </ScrollView>
     <LinearLayout
