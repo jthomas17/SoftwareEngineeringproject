@@ -21,40 +21,43 @@ public final class R {
         public static final int transparentplay=0x7f020004;
     }
     public static final class id {
-        public static final int Description=0x7f07000a;
-        public static final int GoToPictureSelect=0x7f070006;
-        public static final int PreviewVid=0x7f07000b;
-        public static final int SelectPicturesGrid=0x7f070018;
-<<<<<<< HEAD
-=======
-        public static final int StoryPicture=0x7f070012;
->>>>>>> e8bd625d1e8aa47a45379b5534c25181839b12ce
-        public static final int Title=0x7f070009;
-        public static final int camRoll=0x7f070019;
-        public static final int delete=0x7f070013;
+        public static final int Description=0x7f070013;
+        public static final int GoToPictureSelect=0x7f07000f;
+        public static final int PreviewVid=0x7f070014;
+        public static final int PreviewVid1=0x7f070004;
+        public static final int PreviewVid2=0x7f070006;
+        public static final int PreviewVid3=0x7f070008;
+        public static final int PreviewVid4=0x7f07000a;
+        public static final int PreviewVid5=0x7f07000c;
+        public static final int SelectPicturesGrid=0x7f070022;
+        public static final int StoryPicture=0x7f07001c;
+        public static final int Title=0x7f070012;
+        public static final int camRoll=0x7f070023;
+        public static final int delete=0x7f07001d;
         public static final int gridImage=0x7f070000;
-        public static final int myButton=0x7f070005;
-        public static final int photoTray=0x7f070010;
-        public static final int phototrayholder=0x7f070011;
-        public static final int previewButton=0x7f070004;
+        public static final int myButton=0x7f07000e;
+        public static final int photoTray=0x7f07001a;
+        public static final int phototrayholder=0x7f07001b;
+        public static final int previewButton=0x7f070015;
+        public static final int previewButton1=0x7f070005;
+        public static final int previewButton2=0x7f070007;
+        public static final int previewButton3=0x7f070009;
+        public static final int previewButton4=0x7f07000b;
+        public static final int previewButton5=0x7f07000d;
         public static final int scrollView1=0x7f070003;
-        public static final int start=0x7f070014;
-        public static final int stop=0x7f070015;
-<<<<<<< HEAD
-        public static final int surfaceView1=0x7f070012;
-=======
->>>>>>> e8bd625d1e8aa47a45379b5534c25181839b12ce
+        public static final int start=0x7f07001e;
+        public static final int stop=0x7f07001f;
         public static final int textViewMain=0x7f070002;
-        public static final int textViewPreview=0x7f070008;
-        public static final int textViewRecord=0x7f07000f;
-        public static final int textViewSelect=0x7f070017;
-        public static final int toEmail=0x7f07000d;
-        public static final int toPhone=0x7f07000c;
-        public static final int toRecord=0x7f07001a;
+        public static final int textViewPreview=0x7f070011;
+        public static final int textViewRecord=0x7f070019;
+        public static final int textViewSelect=0x7f070021;
+        public static final int toEmail=0x7f070017;
+        public static final int toPhone=0x7f070016;
+        public static final int toRecord=0x7f070024;
         public static final int toolbarMain=0x7f070001;
-        public static final int toolbarPreview=0x7f070007;
-        public static final int toolbarRecord=0x7f07000e;
-        public static final int toolbarSelect=0x7f070016;
+        public static final int toolbarPreview=0x7f070010;
+        public static final int toolbarRecord=0x7f070018;
+        public static final int toolbarSelect=0x7f070020;
     }
     public static final class layout {
         public static final int gridtile=0x7f030000;
