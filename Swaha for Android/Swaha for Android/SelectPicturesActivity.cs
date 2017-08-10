@@ -108,7 +108,7 @@ namespace Swaha_for_Android
             return path;
         }
     
-
+        // Packages image paths to next activity
         public Bundle StoryBundle()
         {
             Bundle b = new Bundle();

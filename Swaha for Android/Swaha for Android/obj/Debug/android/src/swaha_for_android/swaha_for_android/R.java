@@ -65,7 +65,8 @@ public final class R {
         public static final int openingpage=0x7f030002;
         public static final int preview=0x7f030003;
         public static final int recordscreen=0x7f030004;
-        public static final int selectpictures=0x7f030005;
+        public static final int scrollcell=0x7f030005;
+        public static final int selectpictures=0x7f030006;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;

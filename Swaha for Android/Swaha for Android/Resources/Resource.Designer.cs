@@ -228,7 +228,10 @@ namespace Swaha_for_Android
 			public const int RecordScreen = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int SelectPictures = 2130903045;
+			public const int ScrollCell = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int SelectPictures = 2130903046;
 			
 			static Layout()
 			{
